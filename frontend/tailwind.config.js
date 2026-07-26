@@ -2,7 +2,7 @@
 // Design tokens from: project-index/09_Design_System.md
 export default {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
-  darkMode: 'class', // User-selectable dark mode (class strategy)
+  darkMode: 'media', // System preference only per PO Decision 6
   theme: {
     extend: {
       // ── Color Palette (PI-09 Design System) ───────────────────────────────

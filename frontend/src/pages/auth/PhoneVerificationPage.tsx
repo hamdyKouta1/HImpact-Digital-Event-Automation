@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useAuth } from '@/contexts/AuthContext'
 
 /**
  * Phone verification page.
@@ -16,7 +15,6 @@ import { useAuth } from '@/contexts/AuthContext'
  * See: project-index/02_Decision_Log.md — DEC-013 Authentication
  */
 export function PhoneVerificationPage() {
-  const { user } = useAuth()
   const navigate = useNavigate()
   const [step, setStep] = useState<'phone' | 'otp'>('phone')
   const [phone, setPhone] = useState('+20')
