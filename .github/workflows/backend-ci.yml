@@ -1,0 +1,56 @@
+name: Backend CI
+
+# Triggers: pull requests and pushes to main/develop
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'backend/**'
+      - '.github/workflows/backend-ci.yml'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'backend/**'
+
+# See: project-index/10_Deployment_DevOps.md — CI/CD Pipeline
+jobs:
+  build-and-test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    # Testcontainers requires Docker — available on ubuntu-latest runners
+    services:
+      docker:
+        image: docker:dind
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: 'maven'
+
+      - name: Build with Maven (skip tests for speed check)
+        working-directory: backend
+        run: ./mvnw compile -q
+
+      - name: Run unit and integration tests
+        working-directory: backend
+        run: ./mvnw test
+        env:
+          # Testcontainers uses Docker — no env vars needed for test DB
+          SPRING_PROFILES_ACTIVE: test
+          JWT_SECRET: ${{ secrets.JWT_SECRET_TEST || 'dGVzdC1zZWNyZXQta2V5LWZvci1jaS10ZXN0aW5nLTI1NmJpdHMtbG9uZw==' }}
+          GOOGLE_CLIENT_ID: test-client-id
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results
+          path: backend/target/surefire-reports/
+          retention-days: 7
