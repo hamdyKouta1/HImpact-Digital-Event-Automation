@@ -46,6 +46,12 @@ public class GlobalExceptionHandler {
         return errorResponse(HttpStatus.UNPROCESSABLE_ENTITY, "BUSINESS_RULE_VIOLATION", ex.getMessage());
     }
 
+    @ExceptionHandler(org.springframework.web.multipart.MaxUploadSizeExceededException.class)
+    public ResponseEntity<Map<String, Object>> handleMaxUploadSizeExceeded(org.springframework.web.multipart.MaxUploadSizeExceededException ex) {
+        log.warn("Upload size limit exceeded: {}", ex.getMessage());
+        return errorResponse(HttpStatus.BAD_REQUEST, "UPLOAD_SIZE_EXCEEDED", "File size exceeds the maximum allowed upload limit.");
+    }
+
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<Map<String, Object>> handleValidation(MethodArgumentNotValidException ex) {
         Map<String, String> fieldErrors = new HashMap<>();

@@ -1,0 +1,17 @@
+package com.himpact.repository;
+
+import com.himpact.entity.Notification;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.UUID;
+
+@Repository
+public interface NotificationRepository extends JpaRepository<Notification, UUID> {
+    Page<Notification> findByEventIdAndIsDeletedFalse(UUID eventId, Pageable pageable);
+    List<Notification> findByStatus(String status);
+    long countByEventIdAndStatusAndIsDeletedFalse(UUID eventId, String status);
+}

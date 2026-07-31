@@ -29,6 +29,14 @@ public class JwtTokenProvider {
 
     private final AppProperties appProperties;
 
+    @jakarta.annotation.PostConstruct
+    public void init() {
+        String secret = appProperties.getSecurity().getJwt().getSecret();
+        if (secret == null || secret.contains("change-this-to-a-strong")) {
+            log.warn("SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!");
+        }
+    }
+
     /**
      * Generate a short-lived access token for the authenticated user.
      */

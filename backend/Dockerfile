@@ -1,39 +1,24 @@
-# ── Stage 1: Build ────────────────────────────────────────────────────────────
-FROM eclipse-temurin:21-jdk-alpine AS builder
+# Multi-Stage Production Dockerfile for HImpact Backend API
+# Stage 1: Build JAR using Maven
+FROM maven:3.9.8-eclipse-temurin-21-alpine AS builder
+WORKDIR /app
+COPY pom.xml .
+RUN mvn dependency:go-offline -B
+COPY src ./src
+RUN mvn package -DskipTests -B
 
-WORKDIR /build
-
-# Copy Maven wrapper and POM first for dependency caching
-COPY .mvn/ .mvn/
-COPY mvnw pom.xml ./
-RUN ./mvnw dependency:go-offline -q
-
-# Copy source and build
-COPY src/ src/
-RUN ./mvnw package -DskipTests -q
-
-# ── Stage 2: Runtime ──────────────────────────────────────────────────────────
-FROM eclipse-temurin:21-jre-alpine AS runtime
-
+# Stage 2: Runtime JRE Container
+FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 
-# Create non-root user for security (principle of least privilege)
+# Create non-root system user for security
 RUN addgroup -S himpact && adduser -S himpact -G himpact
+USER himpact:himpact
 
-# Copy the built JAR
-COPY --from=builder /build/target/*.jar app.jar
-
-# Set ownership
-RUN chown himpact:himpact app.jar
-
-USER himpact
+COPY --from=builder /app/target/himpact-backend-0.2.0.jar app.jar
 
 EXPOSE 8080
+HEALTHCHECK --interval=30s --timeout=5s --start-period=40s --retries=3 \
+  CMD wget --no-verbose --tries=1 --spider http://localhost:8080/actuator/health/liveness || exit 1
 
-HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-    CMD wget -qO- http://localhost:8080/actuator/health || exit 1
-
-ENTRYPOINT ["java", \
-    "-Djava.security.egd=file:/dev/./urandom", \
-    "-Dspring.profiles.active=${SPRING_PROFILES_ACTIVE:prod}", \
-    "-jar", "app.jar"]
+ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "app.jar"]

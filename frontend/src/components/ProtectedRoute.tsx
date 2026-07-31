@@ -4,22 +4,18 @@ import type { UserRole } from '@/types'
 
 interface ProtectedRouteProps {
   children: React.ReactNode
-  /** Required role to access this route. If omitted, any authenticated user is allowed. */
   requiredRole?: UserRole
+  allowedRoles?: UserRole[]
 }
 
 /**
  * Route guard — redirects unauthenticated users to /sign-in.
  * Preserves the intended destination for redirect after login.
- *
- * See: project-index/03_Functional_Requirements.md — FR-01 Authentication
- * See: project-index/04_Non_Functional_Requirements.md — NFR-05 Security
  */
-export function ProtectedRoute({ children, requiredRole }: ProtectedRouteProps) {
+export function ProtectedRoute({ children, requiredRole, allowedRoles }: ProtectedRouteProps) {
   const { isAuthenticated, isLoading, user } = useAuth()
   const location = useLocation()
 
-  // Show nothing while checking stored token (prevents flicker)
   if (isLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-surface-dark">
@@ -29,13 +25,15 @@ export function ProtectedRoute({ children, requiredRole }: ProtectedRouteProps) 
   }
 
   if (!isAuthenticated) {
-    // Redirect to sign-in, preserving the intended URL
     return <Navigate to="/sign-in" state={{ from: location }} replace />
   }
 
+  if (allowedRoles && allowedRoles.length > 0 && user && !allowedRoles.includes(user.role)) {
+    return <Navigate to="/unauthorized" state={{ from: location }} replace />
+  }
+
   if (requiredRole && user?.role !== requiredRole) {
-    // Authenticated but insufficient role
-    return <Navigate to="/unauthorized" replace />
+    return <Navigate to="/unauthorized" state={{ from: location }} replace />
   }
 
   return <>{children}</>

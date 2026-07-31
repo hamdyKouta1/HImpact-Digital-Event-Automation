@@ -48,6 +48,7 @@ public class AuthService {
 
     private final UserRepository userRepository;
     private final JwtTokenProvider jwtTokenProvider;
+    private final RefreshTokenService refreshTokenService;
     private final AppProperties appProperties;
 
     /**
@@ -139,5 +140,17 @@ public class AuthService {
         }
         user.setLastLogin(Instant.now());
         return userRepository.save(user);
+    }
+
+    @Transactional
+    public AuthTokenResponse refreshToken(String refreshTokenStr) {
+        var token = refreshTokenService.findByToken(refreshTokenStr);
+        var verifiedToken = refreshTokenService.verifyExpiration(token);
+        User user = verifiedToken.getUser();
+
+        String newAccessToken = jwtTokenProvider.generateAccessToken(user.getId(), user.getEmail(), user.getRole().name());
+        var newRefreshToken = refreshTokenService.createRefreshToken(user.getId());
+
+        return AuthTokenResponse.of(newAccessToken, newRefreshToken.getToken(), 3600L);
     }
 }

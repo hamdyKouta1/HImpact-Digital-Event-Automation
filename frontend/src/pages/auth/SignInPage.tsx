@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useAuth } from '@/contexts/AuthContext'
 
@@ -13,7 +13,7 @@ import { useAuth } from '@/contexts/AuthContext'
  * See: project-index/07_API_Specification.md — POST /auth/google
  */
 export function SignInPage() {
-  const { login, isAuthenticated } = useAuth()
+  const { isAuthenticated } = useAuth()
   const navigate = useNavigate()
   const location = useLocation()
   const [isLoading, setIsLoading] = useState(false)
@@ -21,6 +21,12 @@ export function SignInPage() {
 
   // Redirect if already authenticated
   const from = (location.state as { from?: Location })?.from?.pathname || '/guest'
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate(from, { replace: true })
+    }
+  }, [isAuthenticated, navigate, from])
 
   const handleGoogleLogin = useCallback(async () => {
     // In the real implementation, this will use the Google GSI SDK:
@@ -36,15 +42,14 @@ export function SignInPage() {
       // await login(idToken)
       // navigate(from, { replace: true })
       console.log('Google Sign-In — GSI integration pending Sprint 2')
-    } catch (err) {
+    } catch (_err) {
       setError('Sign-in failed. Please try again.')
     } finally {
       setIsLoading(false)
     }
-  }, [login, navigate, from])
+  }, [])
 
   if (isAuthenticated) {
-    navigate(from, { replace: true })
     return null
   }
 

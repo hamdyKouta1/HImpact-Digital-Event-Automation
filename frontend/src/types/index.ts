@@ -23,7 +23,7 @@ export interface PhoneVerificationRequest {
 
 // ── Users ─────────────────────────────────────────────────────────────────────
 
-export type UserRole = 'ADMIN' | 'OWNER' | 'GUEST'
+export type UserRole = 'SUPER_ADMIN' | 'ADMIN' | 'SUPPORT' | 'FINANCE' | 'OWNER' | 'GUEST'
 export type UserStatus = 'ACTIVE' | 'SUSPENDED' | 'PENDING_VERIFICATION'
 
 export interface User {
@@ -42,12 +42,59 @@ export interface User {
 
 // ── Events ────────────────────────────────────────────────────────────────────
 
-export type EventType = 'WEDDING' | 'BIRTHDAY' | 'GRADUATION' | 'CORPORATE' | 'CONFERENCE' | 'OTHER'
+export type EventType = 'WEDDING' | 'ENGAGEMENT' | 'BIRTHDAY' | 'GRADUATION' | 'CORPORATE' | 'CONFERENCE' | 'EXHIBITION' | 'PRODUCT_LAUNCH' | 'COMMUNITY' | 'PRIVATE_CELEBRATION' | 'OTHER'
 export type EventStatus = 'DRAFT' | 'PUBLISHED' | 'ARCHIVED' | 'SUSPENDED'
+
+export interface CreateEventRequest {
+  title: string
+  eventType: EventType
+  brideName?: string
+  groomName?: string
+  description?: string
+  venueName: string
+  venueAddress?: string
+  googleMapsUrl?: string
+  eventDate: string
+  startTime?: string
+  endTime?: string
+  coverImage?: string
+  packageId?: string
+  themeId?: string
+}
+
+export interface UpdateEventRequest {
+  title?: string
+  eventType?: EventType
+  brideName?: string
+  groomName?: string
+  description?: string
+  venueName?: string
+  venueAddress?: string
+  googleMapsUrl?: string
+  eventDate?: string
+  startTime?: string
+  endTime?: string
+  coverImage?: string
+  themeId?: string
+}
+
+export interface EventSummaryResponse {
+  id: string
+  title: string
+  eventType: EventType
+  eventDate: string
+  venueName: string
+  coverImage?: string
+  status: EventStatus
+  slug?: string
+  totalGuests?: number
+  totalUploads?: number
+}
 
 export interface Event {
   id: string
   ownerId: string
+  ownerName?: string
   title: string
   eventType: EventType
   brideName?: string
@@ -56,12 +103,14 @@ export interface Event {
   venueName?: string
   venueAddress?: string
   googleMapsUrl?: string
-  eventDate: string // ISO date
+  eventDate: string
   startTime?: string
   endTime?: string
   coverImage?: string
   packageId?: string
+  packageName?: string
   themeId?: string
+  themeName?: string
   status: EventStatus
   slug?: string
   createdAt: string
@@ -84,6 +133,7 @@ export interface Guest {
   uploadedCount: number
   storageUsedMb: number
   status: GuestStatus
+  createdAt: string
 }
 
 // ── RSVP ──────────────────────────────────────────────────────────────────────

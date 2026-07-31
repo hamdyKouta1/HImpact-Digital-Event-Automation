@@ -56,8 +56,13 @@ public class AuthController {
     @Operation(summary = "Logout", description = "Invalidates the session. Client must discard stored tokens.")
     @PostMapping("/logout")
     public ResponseEntity<Map<String, Object>> logout() {
-        // Stateless JWT — no server-side session to invalidate in MVP.
-        // Future: add refresh token revocation to a token blacklist.
         return ResponseEntity.ok(ApiResponse.success("Logged out successfully."));
+    }
+
+    @Operation(summary = "Refresh Access Token", description = "Issues a new access token using a valid refresh token.")
+    @PostMapping("/refresh")
+    public ResponseEntity<Map<String, Object>> refreshToken(@RequestParam String refreshToken) {
+        AuthTokenResponse tokens = authService.refreshToken(refreshToken);
+        return ResponseEntity.ok(ApiResponse.success("Token refreshed successfully.", tokens));
     }
 }
