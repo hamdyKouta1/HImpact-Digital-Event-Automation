@@ -1,7 +1,5 @@
 package com.himpact.storage;
 
-import java.io.InputStream;
-
 /**
  * Storage Provider Abstraction Interface.
  *

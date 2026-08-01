@@ -3,7 +3,6 @@ package com.himpact.service;
 import com.himpact.dto.invitation.PublicInvitationResponse;
 import com.himpact.entity.*;
 import com.himpact.exception.AuthenticationException;
-import com.himpact.exception.ResourceNotFoundException;
 import com.himpact.repository.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

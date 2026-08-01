@@ -88,6 +88,7 @@ public class RsvpService {
         long totalPending = totalInvited - (totalAccepted + totalDeclined + totalMaybe);
 
         List<Rsvp> rsvps = rsvpRepository.findByEventIdAndIsDeletedFalse(eventId);
+        @SuppressWarnings("null") // Eclipse null analysis false-positive: stream elements are never null
         long expectedTotalAttendees = rsvps.stream()
                 .filter(r -> r.getAttendanceStatus() == AttendanceStatus.ACCEPTED)
                 .mapToInt(Rsvp::getAttendeeCount)

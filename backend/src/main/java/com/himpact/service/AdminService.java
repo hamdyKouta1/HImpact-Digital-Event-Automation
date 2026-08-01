@@ -27,7 +27,6 @@ public class AdminService {
 
     private final UserRepository userRepository;
     private final AnalyticsService analyticsService;
-    private final FeatureFlagService featureFlagService;
     private final AuditLogService auditLogService;
 
     @Transactional(readOnly = true)
@@ -56,8 +55,7 @@ public class AdminService {
                 "User",
                 userId.toString(),
                 oldRole.name(),
-                newRole.name()
-        );
+                newRole.name());
 
         log.info("Admin [{}] updated role of user [{}] to [{}]", adminUserId, userId, newRole);
         return updated;

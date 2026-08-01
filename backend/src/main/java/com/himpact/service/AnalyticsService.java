@@ -7,11 +7,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.math.BigDecimal;
-
 /**
  * Pre-aggregated Analytics Service.
- * Serves dashboard pages strictly from pre-calculated DashboardStatistics table per PO Workstream D.
+ * Serves dashboard pages strictly from pre-calculated DashboardStatistics table
+ * per PO Workstream D.
  */
 @Slf4j
 @Service
@@ -22,7 +21,6 @@ public class AnalyticsService {
     private final UserRepository userRepository;
     private final EventRepository eventRepository;
     private final GuestRepository guestRepository;
-    private final MediaFileRepository mediaFileRepository;
 
     private static final String SINGLETON_KEY = "SINGLETON_GLOBAL";
 

@@ -20,6 +20,7 @@ public class FeatureFlagService {
     private final FeatureFlagRepository featureFlagRepository;
 
     @Transactional(readOnly = true)
+    @SuppressWarnings("null") // Eclipse false-positive: Optional.map() guarantees non-null argument to FeatureFlag::isEnabled
     public boolean isFeatureEnabled(String flagName) {
         return featureFlagRepository.findByFlagName(flagName)
                 .map(FeatureFlag::isEnabled)

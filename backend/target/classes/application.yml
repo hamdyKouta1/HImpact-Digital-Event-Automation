@@ -29,11 +29,11 @@ spring:
     locations: classpath:db/migration
     baseline-on-migrate: false
 
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: https://accounts.google.com
+  # spring.security.oauth2.resourceserver.jwt removed.
+  # The project uses a custom JwtAuthenticationFilter with HImpact-issued tokens.
+  # The resource-server auto-configuration conflicts: it creates a second JWT decoder
+  # that contacts https://accounts.google.com at startup (OIDC discovery), causing
+  # startup failures in offline environments and duplicate security filter chains.
 
   mail:
     host: ${SMTP_HOST:smtp.gmail.com}
@@ -66,9 +66,11 @@ management:
       show-details: always
       probes:
         enabled: true
-  metrics:
-    export:
-      prometheus:
+  prometheus:
+    metrics:
+      export:
+        # Correct key for Spring Boot 3.2+.
+        # Deprecated key was: management.metrics.export.prometheus.enabled
         enabled: true
     tags:
       application: ${spring.application.name}

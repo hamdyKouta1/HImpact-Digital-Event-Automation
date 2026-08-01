@@ -6,8 +6,6 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
-import java.util.UUID;
-
 /**
  * Request body for submitting or updating RSVP response.
  * See: project-index/07_API_Specification.md — RSVP APIs

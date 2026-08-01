@@ -15,7 +15,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.Instant;
 import java.util.Optional;
-import java.util.UUID;
 
 /**
  * Invitation Service — handles guest invitation lookup, QR code generation, and view tracking.
@@ -79,7 +78,9 @@ public class InvitationService {
         // Fetch current RSVP status if present
         Optional<Rsvp> rsvpOpt = rsvpRepository.findByGuestId(guest.getId());
         String attendanceStatus = rsvpOpt.map(r -> r.getAttendanceStatus().name()).orElse("PENDING");
+        @SuppressWarnings("null") // Eclipse null analysis false-positive: Optional.map() guarantees non-null argument
         int attendeeCount = rsvpOpt.map(Rsvp::getAttendeeCount).orElse(1);
+        @SuppressWarnings("null") // Eclipse null analysis false-positive: Optional.map() guarantees non-null argument
         String rsvpNotes = rsvpOpt.map(Rsvp::getNotes).orElse("");
 
         // Generate QR code Data-URL if missing

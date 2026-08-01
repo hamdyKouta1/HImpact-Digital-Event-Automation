@@ -15,7 +15,7 @@ WORKDIR /app
 RUN addgroup -S himpact && adduser -S himpact -G himpact
 USER himpact:himpact
 
-COPY --from=builder /app/target/himpact-backend-0.2.0.jar app.jar
+COPY --from=builder /app/target/himpact-backend-*.jar app.jar
 
 EXPOSE 8080
 HEALTHCHECK --interval=30s --timeout=5s --start-period=40s --retries=3 \

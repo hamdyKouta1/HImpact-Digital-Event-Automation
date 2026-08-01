@@ -19,9 +19,9 @@ import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.text.Normalizer;
 import java.util.List;
 import java.util.UUID;
-import java.util.text.Normalizer;
 import java.util.Locale;
 
 /**
@@ -156,18 +156,30 @@ public class EventService {
             throw new BusinessRuleException("Cannot update an archived event.");
         }
 
-        if (request.title() != null) event.setTitle(request.title());
-        if (request.eventType() != null) event.setEventType(request.eventType());
-        if (request.brideName() != null) event.setBrideName(request.brideName());
-        if (request.groomName() != null) event.setGroomName(request.groomName());
-        if (request.description() != null) event.setDescription(request.description());
-        if (request.venueName() != null) event.setVenueName(request.venueName());
-        if (request.venueAddress() != null) event.setVenueAddress(request.venueAddress());
-        if (request.googleMapsUrl() != null) event.setGoogleMapsUrl(request.googleMapsUrl());
-        if (request.eventDate() != null) event.setEventDate(request.eventDate());
-        if (request.startTime() != null) event.setStartTime(request.startTime());
-        if (request.endTime() != null) event.setEndTime(request.endTime());
-        if (request.coverImage() != null) event.setCoverImage(request.coverImage());
+        if (request.title() != null)
+            event.setTitle(request.title());
+        if (request.eventType() != null)
+            event.setEventType(request.eventType());
+        if (request.brideName() != null)
+            event.setBrideName(request.brideName());
+        if (request.groomName() != null)
+            event.setGroomName(request.groomName());
+        if (request.description() != null)
+            event.setDescription(request.description());
+        if (request.venueName() != null)
+            event.setVenueName(request.venueName());
+        if (request.venueAddress() != null)
+            event.setVenueAddress(request.venueAddress());
+        if (request.googleMapsUrl() != null)
+            event.setGoogleMapsUrl(request.googleMapsUrl());
+        if (request.eventDate() != null)
+            event.setEventDate(request.eventDate());
+        if (request.startTime() != null)
+            event.setStartTime(request.startTime());
+        if (request.endTime() != null)
+            event.setEndTime(request.endTime());
+        if (request.coverImage() != null)
+            event.setCoverImage(request.coverImage());
 
         if (request.themeId() != null) {
             ThemeEntity theme = themeRepository.findById(request.themeId())
@@ -246,8 +258,7 @@ public class EventService {
                 event.getStatus(),
                 event.getSlug(),
                 event.getCreatedAt(),
-                event.getUpdatedAt()
-        );
+                event.getUpdatedAt());
     }
 
     private EventSummaryResponse mapToSummary(Event event) {
@@ -261,7 +272,7 @@ public class EventService {
                 event.getStatus(),
                 event.getSlug(),
                 0, // Guest count populated dynamically
-                0  // Upload count populated dynamically
+                0 // Upload count populated dynamically
         );
     }
 

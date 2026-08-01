@@ -2,7 +2,8 @@ package com.himpact.storage;
 
 /**
  * Drive Provider Interface.
- * Production-ready abstraction for Google Drive file management per Sprint 6 Workstream A.
+ * Production-ready abstraction for Google Drive file management per Sprint 6
+ * Workstream A.
  */
 public interface DriveProvider {
 
@@ -28,6 +29,8 @@ public interface DriveProvider {
 
     /**
      * Get or create a folder path on Google Drive.
+     * 
+     * @throws Exception
      */
-    String getOrCreateFolder(String folderPath);
+    String getOrCreateFolder(String folderPath) throws Exception;
 }
