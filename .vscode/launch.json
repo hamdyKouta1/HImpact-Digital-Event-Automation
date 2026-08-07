@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run: HimpactApplication (dev)",
+            "request": "launch",
+            "mainClass": "com.himpact.HimpactApplication",
+            "projectName": "himpact-backend",
+            "cwd": "${workspaceFolder}/backend",
+            "vmArgs": "-Dspring.profiles.active=dev",
+            "env": {
+                "SPRING_DATASOURCE_URL": "jdbc:postgresql://localhost:5433/HIMPACT_DB",
+                "SPRING_DATASOURCE_USERNAME": "himpact_dev",
+                "SPRING_DATASOURCE_PASSWORD": "hamdy"
+            }
+        }
+    ]
+}

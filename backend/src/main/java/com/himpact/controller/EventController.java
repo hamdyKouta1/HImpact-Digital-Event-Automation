@@ -100,13 +100,4 @@ public class EventController {
         eventService.deleteEvent(eventId);
         return ResponseEntity.ok(ApiResponse.success("Event deleted successfully."));
     }
-
-    @Operation(summary = "Public Invitation Details", description = "Public endpoint fetching event details by slug.")
-    @GetMapping("/invite/{slug}")
-    public ResponseEntity<Map<String, Object>> getPublicInvitation(
-            @PathVariable String slug
-    ) {
-        EventResponse event = eventService.getEventBySlug(slug);
-        return ResponseEntity.ok(ApiResponse.success("Invitation details retrieved.", event));
-    }
 }

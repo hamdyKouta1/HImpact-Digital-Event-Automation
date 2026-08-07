@@ -101,12 +101,12 @@ set -e
 
 BACKUP_DIR="/var/backups/himpact"
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
-BACKUP_FILE="${BACKUP_DIR}/himpact_prod_${TIMESTAMP}.sql.gz"
+BACKUP_FILE="${BACKUP_DIR}/HIMPACT_DB_prod_${TIMESTAMP}.sql.gz"
 
 mkdir -p "${BACKUP_DIR}"
 
 # Execute compressed database dump
-docker exec -t himpact-prod-postgres pg_dump -U himpact -d himpact_prod | gzip > "${BACKUP_FILE}"
+docker exec -t himpact-prod-postgres pg_dump -U himpact_prod -d HIMPACT_DB | gzip > "${BACKUP_FILE}"
 
 # Retain backups for 30 days
 find "${BACKUP_DIR}" -type f -name "*.sql.gz" -mtime +30 -delete
@@ -130,7 +130,7 @@ To restore the database from a backup file:
 docker compose -f docker-compose.prod.yml stop backend proxy
 
 # 2. Drop existing database and restore from backup
-gunzip -c /var/backups/himpact/himpact_prod_20260731_020000.sql.gz | docker exec -i himpact-prod-postgres psql -U himpact -d himpact_prod
+gunzip -c /var/backups/himpact/HIMPACT_DB_prod_20260731_020000.sql.gz | docker exec -i himpact-prod-postgres psql -U himpact_prod -d HIMPACT_DB
 
 # 3. Restart application containers
 docker compose -f docker-compose.prod.yml start backend proxy

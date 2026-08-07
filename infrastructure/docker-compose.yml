@@ -15,16 +15,16 @@ services:
     container_name: himpact-postgres
     restart: unless-stopped
     environment:
-      POSTGRES_DB: ${POSTGRES_DB:-himpact}
-      POSTGRES_USER: ${POSTGRES_USER:-himpact}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+      POSTGRES_DB: ${POSTGRES_DB:-HIMPACT_DB}
+      POSTGRES_USER: ${POSTGRES_USER:-himpact_dev}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-hamdy}
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - "5433:5432"
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-himpact} -d ${POSTGRES_DB:-himpact}"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-himpact_dev} -d ${POSTGRES_DB:-HIMPACT_DB}"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -37,7 +37,7 @@ services:
     restart: unless-stopped
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-admin@himpact.app}
-      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-changeme}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-hamdy}
       PGADMIN_CONFIG_SERVER_MODE: "False"
     volumes:
       - pgadmin_data:/var/lib/pgadmin
@@ -58,9 +58,9 @@ services:
     restart: unless-stopped
     environment:
       SPRING_PROFILES_ACTIVE: dev
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/${POSTGRES_DB:-himpact}
-      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER:-himpact}
-      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/${POSTGRES_DB:-HIMPACT_DB}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER:-himpact_dev}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:-hamdy}
       JWT_SECRET: ${JWT_SECRET:-}
       GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
       GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET:-}

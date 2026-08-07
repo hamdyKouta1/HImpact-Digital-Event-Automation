@@ -1,12 +1,12 @@
 #!/bin/bash
 # HImpact Production Database Disaster Recovery Restore Script
-# Usage: ./scripts/restore-db.sh /path/to/himpact_prod_YYYYMMDD_HHMMSS.sql.gz
+# Usage: ./scripts/restore-db.sh /path/to/HIMPACT_DB_prod_YYYYMMDD_HHMMSS.sql.gz
 
 set -e
 
 if [ -z "$1" ]; then
   echo "Error: Please specify target backup file (.sql.gz)"
-  echo "Usage: ./scripts/restore-db.sh /path/to/himpact_prod_20260731.sql.gz"
+  echo "Usage: ./scripts/restore-db.sh /path/to/HIMPACT_DB_prod_20260731.sql.gz"
   exit 1
 fi
 
@@ -27,6 +27,6 @@ fi
 
 echo "[$(date)] Restoring database from ${BACKUP_FILE}..."
 
-gunzip -c "${BACKUP_FILE}" | docker exec -i himpact-prod-postgres psql -U himpact -d himpact_prod
+gunzip -c "${BACKUP_FILE}" | docker exec -i himpact-prod-postgres psql -U himpact_prod -d HIMPACT_DB
 
 echo "[$(date)] Disaster recovery restore completed successfully!"

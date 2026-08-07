@@ -5,9 +5,9 @@ spring:
 
   datasource:
     # Testcontainers will override this dynamically
-    url: jdbc:tc:postgresql:16:///himpact_test
-    username: test
-    password: test
+    url: jdbc:tc:postgresql:16:///HIMPACT_DB
+    username: himpact_test
+    password: hamdy
     driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
 
   flyway:

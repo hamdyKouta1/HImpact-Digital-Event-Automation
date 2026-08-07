@@ -67,9 +67,9 @@ cp .env.example .env
 
 ```ini
 # ─── Backend Configuration ──────────────────────────────────────────────────
-SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/himpact
-SPRING_DATASOURCE_USERNAME=himpact
-SPRING_DATASOURCE_PASSWORD=himpact_secure_password_2026
+SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/HIMPACT_DB
+SPRING_DATASOURCE_USERNAME=himpact_dev
+SPRING_DATASOURCE_PASSWORD=hamdy
 
 # JWT Secret (Must be at least 256 bits / 32 characters)
 JWT_SECRET=super-secret-key-32-chars-minimum-length-for-hmac-sha256-security
@@ -103,9 +103,9 @@ VITE_API_BASE_URL=http://localhost:8080/api/v1
 VITE_GOOGLE_CLIENT_ID=your-client-id.apps.googleusercontent.com
 
 # ─── Infrastructure Configuration ───────────────────────────────────────────
-POSTGRES_DB=himpact
-POSTGRES_USER=himpact
-POSTGRES_PASSWORD=himpact_secure_password_2026
+POSTGRES_DB=HIMPACT_DB
+POSTGRES_USER=himpact_dev
+POSTGRES_PASSWORD=hamdy
 ```
 
 ---
@@ -147,9 +147,9 @@ POSTGRES_PASSWORD=himpact_secure_password_2026
 ```bash
 docker run -d \
   --name himpact-postgres \
-  -e POSTGRES_DB=himpact \
-  -e POSTGRES_USER=himpact \
-  -e POSTGRES_PASSWORD=himpact_secure_password_2026 \
+  -e POSTGRES_DB=HIMPACT_DB \
+  -e POSTGRES_USER=himpact_dev \
+  -e POSTGRES_PASSWORD=hamdy \
   -p 5432:5432 \
   postgres:16-alpine
 ```
@@ -314,7 +314,7 @@ http_server_requests_seconds_count{application="himpact-backend",exception="None
 - **Fix**: Reset database or run `mvn flyway:repair`.
 ```bash
 cd backend
-./mvnw flyway:repair -Dflyway.url=jdbc:postgresql://localhost:5432/himpact -Dflyway.user=himpact -Dflyway.password=himpact_secure_password_2026
+./mvnw flyway:repair -Dflyway.url=jdbc:postgresql://localhost:5432/HIMPACT_DB -Dflyway.user=himpact_dev -Dflyway.password=hamdy
 ```
 
 ### Error 2: `PSQLException: Connection to localhost:5432 refused`

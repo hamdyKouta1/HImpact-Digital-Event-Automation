@@ -1,0 +1,510 @@
+{"timestamp":"2026-08-07 17:52:05.546","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-07 17:52:05.605","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 21.0.11 with PID 8064 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend)"}
+{"timestamp":"2026-08-07 17:52:05.606","level":"DEBUG","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Running with Spring Boot v3.3.2, Spring v6.1.11"}
+{"timestamp":"2026-08-07 17:52:05.607","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"The following 1 profile is active: "dev""}
+{"timestamp":"2026-08-07 17:52:05.681","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-07 17:52:05.681","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-07 17:52:07.423","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-07 17:52:07.568","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 136 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-07 17:52:09.128","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-07 17:52:09.146","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-07 17:52:09.148","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-07 17:52:09.149","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-07 17:52:09.220","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-07 17:52:09.221","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 3539 ms"}
+{"timestamp":"2026-08-07 17:52:09.729","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-07 17:52:09.878","level":"DEBUG","thread":"restartedMain","logger":"c.h.security.JwtAuthenticationFilter","correlationId":"","message":"Filter 'jwtAuthenticationFilter' configured for use"}
+{"timestamp":"2026-08-07 17:52:09.879","level":"DEBUG","thread":"restartedMain","logger":"c.h.security.CorrelationIdFilter","correlationId":"","message":"Filter 'correlationIdFilter' configured for use"}
+{"timestamp":"2026-08-07 17:52:09.883","level":"DEBUG","thread":"restartedMain","logger":"c.h.security.RateLimitingFilter","correlationId":"","message":"Filter 'rateLimitingFilter' configured for use"}
+{"timestamp":"2026-08-07 17:52:10.297","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-07 17:52:10.521","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.pool.HikariPool","correlationId":"","message":"HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@eac9fd5"}
+{"timestamp":"2026-08-07 17:52:10.523","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Start completed."}
+{"timestamp":"2026-08-07 17:52:10.570","level":"INFO ","thread":"restartedMain","logger":"org.flywaydb.core.FlywayExecutor","correlationId":"","message":"Database: jdbc:postgresql://localhost:5433/HIMPACT_DB (PostgreSQL 16.14)"}
+{"timestamp":"2026-08-07 17:52:10.691","level":"INFO ","thread":"restartedMain","logger":"o.f.core.internal.command.DbValidate","correlationId":"","message":"Successfully validated 18 migrations (execution time 00:00.080s)"}
+{"timestamp":"2026-08-07 17:52:10.727","level":"INFO ","thread":"restartedMain","logger":"o.f.core.internal.command.DbMigrate","correlationId":"","message":"Current version of schema "public": 18"}
+{"timestamp":"2026-08-07 17:52:10.733","level":"INFO ","thread":"restartedMain","logger":"o.f.core.internal.command.DbMigrate","correlationId":"","message":"Schema "public" is up to date. No migration necessary."}
+{"timestamp":"2026-08-07 17:52:10.887","level":"INFO ","thread":"restartedMain","logger":"o.h.jpa.internal.util.LogHelper","correlationId":"","message":"HHH000204: Processing PersistenceUnitInfo [name: default]"}
+{"timestamp":"2026-08-07 17:52:10.964","level":"INFO ","thread":"restartedMain","logger":"org.hibernate.Version","correlationId":"","message":"HHH000412: Hibernate ORM core version 6.5.2.Final"}
+{"timestamp":"2026-08-07 17:52:11.007","level":"INFO ","thread":"restartedMain","logger":"o.h.c.i.RegionFactoryInitiator","correlationId":"","message":"HHH000026: Second-level cache disabled"}
+{"timestamp":"2026-08-07 17:52:11.338","level":"INFO ","thread":"restartedMain","logger":"o.s.o.j.p.SpringPersistenceUnitInfo","correlationId":"","message":"No LoadTimeWeaver setup: ignoring JPA class transformer"}
+{"timestamp":"2026-08-07 17:52:11.409","level":"WARN ","thread":"restartedMain","logger":"org.hibernate.orm.deprecation","correlationId":"","message":"HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)"}
+{"timestamp":"2026-08-07 17:52:11.435","level":"DEBUG","thread":"restartedMain","logger":"o.h.t.d.sql.spi.DdlTypeRegistry","correlationId":"","message":"addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@446b0ddb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@cfb430a)"}
+{"timestamp":"2026-08-07 17:52:11.435","level":"DEBUG","thread":"restartedMain","logger":"o.h.t.d.sql.spi.DdlTypeRegistry","correlationId":"","message":"addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@58204e2d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6e8f5065)"}
+{"timestamp":"2026-08-07 17:52:12.781","level":"INFO ","thread":"restartedMain","logger":"o.h.e.t.j.p.i.JtaPlatformInitiator","correlationId":"","message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)"}
+{"timestamp":"2026-08-07 17:52:12.873","level":"INFO ","thread":"restartedMain","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","correlationId":"","message":"Initialized JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-08-07 17:52:13.476","level":"INFO ","thread":"restartedMain","logger":"o.s.d.j.r.query.QueryEnhancerFactory","correlationId":"","message":"Hibernate is in classpath; If applicable, HQL parser will be used."}
+{"timestamp":"2026-08-07 17:52:14.954","level":"WARN ","thread":"restartedMain","logger":"c.h.s.GoogleDriveStorageProvider","correlationId":"","message":"Google Drive Service Account JSON is empty. Using fallback mode for local development."}
+{"timestamp":"2026-08-07 17:52:15.278","level":"WARN ","thread":"restartedMain","logger":"o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration","correlationId":"","message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"}
+{"timestamp":"2026-08-07 17:52:15.325","level":"WARN ","thread":"restartedMain","logger":"o.s.b.a.s.s.UserDetailsServiceAutoConfiguration","correlationId":"","message":"
+
+Using generated security password: 3ffb1861-7358-4b05-bb09-e2364e967a07
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+"}
+{"timestamp":"2026-08-07 17:52:15.341","level":"INFO ","thread":"restartedMain","logger":"o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer","correlationId":"","message":"Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager"}
+{"timestamp":"2026-08-07 17:52:15.529","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed"}
+{"timestamp":"2026-08-07 17:52:15.532","level":"INFO ","thread":"restartedMain","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","correlationId":"","message":"Closing JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-08-07 17:52:15.537","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Shutdown initiated..."}
+{"timestamp":"2026-08-07 17:52:15.544","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Shutdown completed."}
+{"timestamp":"2026-08-07 17:52:15.552","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-08-07 17:52:15.576","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-07 17:52:15.610","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","correlationId":"","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.himpact.HimpactApplication.main(HimpactApplication.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.RuntimeException: Could not postProcess org.springframework.security.config.annotation.web.builders.WebSecurity@2e92433f of type class org.springframework.security.config.annotation.web.builders.WebSecurity
+	at org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor.postProcess(AutowireBeanFactoryObjectPostProcessor.java:71)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.setFilterChainProxySecurityConfigurer(WebSecurityConfiguration.java:148)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:853)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospectorRequestTransformer': Cannot resolve reference to bean 'mvcHandlerMappingIntrospector' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:225)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1323)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1284)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$1.getIfUnique(DefaultListableBeanFactory.java:438)
+	at org.springframework.security.config.annotation.web.builders.WebSecurity.setApplicationContext(WebSecurity.java:397)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:110)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:85)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:412)
+	at org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor.initializeBeanIfNeeded(AutowireBeanFactoryObjectPostProcessor.java:98)
+	at org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor.postProcess(AutowireBeanFactoryObjectPostProcessor.java:67)
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'invitationController' method 
+com.himpact.controller.InvitationController#getPublicInvitation(String, String)
+to {GET [/api/v1/invite/{slug}]}: There is already 'eventController' bean method
+com.himpact.controller.EventController#getPublicInvitation(String) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 49 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'invitationController' method 
+com.himpact.controller.InvitationController#getPublicInvitation(String, String)
+to {GET [/api/v1/invite/{slug}]}: There is already 'eventController' bean method
+com.himpact.controller.EventController#getPublicInvitation(String) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:665)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1397)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:368)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.initHandlerMappings(HandlerMappingIntrospector.java:130)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.afterPropertiesSet(HandlerMappingIntrospector.java:118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 56 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'invitationController' method 
+com.himpact.controller.InvitationController#getPublicInvitation(String, String)
+to {GET [/api/v1/invite/{slug}]}: There is already 'eventController' bean method
+com.himpact.controller.EventController#getPublicInvitation(String) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:674)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:508)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 69 common frames omitted
+{"timestamp":"2026-08-07 18:00:21.575","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-07 18:00:21.618","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 25.0.1 with PID 16456 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend)"}
+{"timestamp":"2026-08-07 18:00:21.619","level":"DEBUG","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Running with Spring Boot v3.3.2, Spring v6.1.11"}
+{"timestamp":"2026-08-07 18:00:21.619","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"The following 1 profile is active: "dev""}
+{"timestamp":"2026-08-07 18:00:21.677","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-07 18:00:21.678","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-07 18:00:22.957","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-07 18:00:23.085","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 120 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-07 18:00:24.259","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-07 18:00:24.270","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-07 18:00:24.272","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-07 18:00:24.273","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-07 18:00:24.323","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-07 18:00:24.324","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 2646 ms"}
+{"timestamp":"2026-08-07 18:00:24.568","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-07 18:00:24.624","level":"DEBUG","thread":"restartedMain","logger":"c.h.security.JwtAuthenticationFilter","correlationId":"","message":"Filter 'jwtAuthenticationFilter' configured for use"}
+{"timestamp":"2026-08-07 18:00:24.624","level":"DEBUG","thread":"restartedMain","logger":"c.h.security.CorrelationIdFilter","correlationId":"","message":"Filter 'correlationIdFilter' configured for use"}
+{"timestamp":"2026-08-07 18:00:24.625","level":"DEBUG","thread":"restartedMain","logger":"c.h.security.RateLimitingFilter","correlationId":"","message":"Filter 'rateLimitingFilter' configured for use"}
+{"timestamp":"2026-08-07 18:00:24.881","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-07 18:00:25.056","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.pool.HikariPool","correlationId":"","message":"HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@501bd0e5"}
+{"timestamp":"2026-08-07 18:00:25.057","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Start completed."}
+{"timestamp":"2026-08-07 18:00:25.094","level":"INFO ","thread":"restartedMain","logger":"org.flywaydb.core.FlywayExecutor","correlationId":"","message":"Database: jdbc:postgresql://localhost:5433/HIMPACT_DB (PostgreSQL 16.14)"}
+{"timestamp":"2026-08-07 18:00:25.161","level":"INFO ","thread":"restartedMain","logger":"o.f.core.internal.command.DbValidate","correlationId":"","message":"Successfully validated 18 migrations (execution time 00:00.041s)"}
+{"timestamp":"2026-08-07 18:00:25.216","level":"INFO ","thread":"restartedMain","logger":"o.f.core.internal.command.DbMigrate","correlationId":"","message":"Current version of schema "public": 18"}
+{"timestamp":"2026-08-07 18:00:25.225","level":"INFO ","thread":"restartedMain","logger":"o.f.core.internal.command.DbMigrate","correlationId":"","message":"Schema "public" is up to date. No migration necessary."}
+{"timestamp":"2026-08-07 18:00:25.334","level":"INFO ","thread":"restartedMain","logger":"o.h.jpa.internal.util.LogHelper","correlationId":"","message":"HHH000204: Processing PersistenceUnitInfo [name: default]"}
+{"timestamp":"2026-08-07 18:00:25.386","level":"INFO ","thread":"restartedMain","logger":"org.hibernate.Version","correlationId":"","message":"HHH000412: Hibernate ORM core version 6.5.2.Final"}
+{"timestamp":"2026-08-07 18:00:25.417","level":"INFO ","thread":"restartedMain","logger":"o.h.c.i.RegionFactoryInitiator","correlationId":"","message":"HHH000026: Second-level cache disabled"}
+{"timestamp":"2026-08-07 18:00:25.691","level":"INFO ","thread":"restartedMain","logger":"o.s.o.j.p.SpringPersistenceUnitInfo","correlationId":"","message":"No LoadTimeWeaver setup: ignoring JPA class transformer"}
+{"timestamp":"2026-08-07 18:00:25.785","level":"WARN ","thread":"restartedMain","logger":"org.hibernate.orm.deprecation","correlationId":"","message":"HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)"}
+{"timestamp":"2026-08-07 18:00:25.816","level":"DEBUG","thread":"restartedMain","logger":"o.h.t.d.sql.spi.DdlTypeRegistry","correlationId":"","message":"addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@30af9b41) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@6e3ded50)"}
+{"timestamp":"2026-08-07 18:00:25.816","level":"DEBUG","thread":"restartedMain","logger":"o.h.t.d.sql.spi.DdlTypeRegistry","correlationId":"","message":"addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@31b9a580) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2b8fb46a)"}
+{"timestamp":"2026-08-07 18:00:27.132","level":"INFO ","thread":"restartedMain","logger":"o.h.e.t.j.p.i.JtaPlatformInitiator","correlationId":"","message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)"}
+{"timestamp":"2026-08-07 18:00:27.284","level":"INFO ","thread":"restartedMain","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","correlationId":"","message":"Initialized JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-08-07 18:00:27.795","level":"INFO ","thread":"restartedMain","logger":"o.s.d.j.r.query.QueryEnhancerFactory","correlationId":"","message":"Hibernate is in classpath; If applicable, HQL parser will be used."}
+{"timestamp":"2026-08-07 18:00:28.965","level":"WARN ","thread":"restartedMain","logger":"c.h.s.GoogleDriveStorageProvider","correlationId":"","message":"Google Drive Service Account JSON is empty. Using fallback mode for local development."}
+{"timestamp":"2026-08-07 18:00:29.167","level":"WARN ","thread":"restartedMain","logger":"o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration","correlationId":"","message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"}
+{"timestamp":"2026-08-07 18:00:29.217","level":"WARN ","thread":"restartedMain","logger":"o.s.b.a.s.s.UserDetailsServiceAutoConfiguration","correlationId":"","message":"
+
+Using generated security password: 14353d58-f5b2-48fd-8fbd-b77452010469
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+"}
+{"timestamp":"2026-08-07 18:00:29.286","level":"INFO ","thread":"restartedMain","logger":"o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer","correlationId":"","message":"Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager"}
+{"timestamp":"2026-08-07 18:00:29.465","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed"}
+{"timestamp":"2026-08-07 18:00:29.468","level":"INFO ","thread":"restartedMain","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","correlationId":"","message":"Closing JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-08-07 18:00:29.471","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Shutdown initiated..."}
+{"timestamp":"2026-08-07 18:00:29.474","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Shutdown completed."}
+{"timestamp":"2026-08-07 18:00:29.479","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-08-07 18:00:29.498","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-07 18:00:29.522","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","correlationId":"","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.himpact.HimpactApplication.main(HimpactApplication.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.RuntimeException: Could not postProcess org.springframework.security.config.annotation.web.builders.WebSecurity@58c08bee of type class org.springframework.security.config.annotation.web.builders.WebSecurity
+	at org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor.postProcess(AutowireBeanFactoryObjectPostProcessor.java:71)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.setFilterChainProxySecurityConfigurer(WebSecurityConfiguration.java:148)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:853)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospectorRequestTransformer': Cannot resolve reference to bean 'mvcHandlerMappingIntrospector' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:225)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1323)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1284)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$1.getIfUnique(DefaultListableBeanFactory.java:438)
+	at org.springframework.security.config.annotation.web.builders.WebSecurity.setApplicationContext(WebSecurity.java:397)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:110)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:85)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:412)
+	at org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor.initializeBeanIfNeeded(AutowireBeanFactoryObjectPostProcessor.java:98)
+	at org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor.postProcess(AutowireBeanFactoryObjectPostProcessor.java:67)
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'invitationController' method 
+com.himpact.controller.InvitationController#getPublicInvitation(String, String)
+to {GET [/api/v1/invite/{slug}]}: There is already 'eventController' bean method
+com.himpact.controller.EventController#getPublicInvitation(String) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 49 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'invitationController' method 
+com.himpact.controller.InvitationController#getPublicInvitation(String, String)
+to {GET [/api/v1/invite/{slug}]}: There is already 'eventController' bean method
+com.himpact.controller.EventController#getPublicInvitation(String) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:665)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1397)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:368)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.initHandlerMappings(HandlerMappingIntrospector.java:130)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.afterPropertiesSet(HandlerMappingIntrospector.java:118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 56 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'invitationController' method 
+com.himpact.controller.InvitationController#getPublicInvitation(String, String)
+to {GET [/api/v1/invite/{slug}]}: There is already 'eventController' bean method
+com.himpact.controller.EventController#getPublicInvitation(String) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:674)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:508)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:987)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 69 common frames omitted
+{"timestamp":"2026-08-07 18:02:08.390","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-07 18:02:08.428","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 25.0.1 with PID 30416 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend)"}
+{"timestamp":"2026-08-07 18:02:08.429","level":"DEBUG","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Running with Spring Boot v3.3.2, Spring v6.1.11"}
+{"timestamp":"2026-08-07 18:02:08.430","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"The following 1 profile is active: "dev""}
+{"timestamp":"2026-08-07 18:02:08.474","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-07 18:02:08.474","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-07 18:02:09.623","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-07 18:02:09.742","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 111 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-07 18:02:10.551","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-07 18:02:10.565","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-07 18:02:10.567","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-07 18:02:10.568","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-07 18:02:10.623","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-07 18:02:10.623","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 2149 ms"}
+{"timestamp":"2026-08-07 18:02:10.818","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-07 18:02:10.865","level":"DEBUG","thread":"restartedMain","logger":"c.h.security.JwtAuthenticationFilter","correlationId":"","message":"Filter 'jwtAuthenticationFilter' configured for use"}
+{"timestamp":"2026-08-07 18:02:10.865","level":"DEBUG","thread":"restartedMain","logger":"c.h.security.CorrelationIdFilter","correlationId":"","message":"Filter 'correlationIdFilter' configured for use"}
+{"timestamp":"2026-08-07 18:02:10.867","level":"DEBUG","thread":"restartedMain","logger":"c.h.security.RateLimitingFilter","correlationId":"","message":"Filter 'rateLimitingFilter' configured for use"}
+{"timestamp":"2026-08-07 18:02:11.083","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-07 18:02:11.226","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.pool.HikariPool","correlationId":"","message":"HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@619e56aa"}
+{"timestamp":"2026-08-07 18:02:11.228","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Start completed."}
+{"timestamp":"2026-08-07 18:02:11.270","level":"INFO ","thread":"restartedMain","logger":"org.flywaydb.core.FlywayExecutor","correlationId":"","message":"Database: jdbc:postgresql://localhost:5433/HIMPACT_DB (PostgreSQL 16.14)"}
+{"timestamp":"2026-08-07 18:02:11.336","level":"INFO ","thread":"restartedMain","logger":"o.f.core.internal.command.DbValidate","correlationId":"","message":"Successfully validated 18 migrations (execution time 00:00.041s)"}
+{"timestamp":"2026-08-07 18:02:11.363","level":"INFO ","thread":"restartedMain","logger":"o.f.core.internal.command.DbMigrate","correlationId":"","message":"Current version of schema "public": 18"}
+{"timestamp":"2026-08-07 18:02:11.366","level":"INFO ","thread":"restartedMain","logger":"o.f.core.internal.command.DbMigrate","correlationId":"","message":"Schema "public" is up to date. No migration necessary."}
+{"timestamp":"2026-08-07 18:02:11.462","level":"INFO ","thread":"restartedMain","logger":"o.h.jpa.internal.util.LogHelper","correlationId":"","message":"HHH000204: Processing PersistenceUnitInfo [name: default]"}
+{"timestamp":"2026-08-07 18:02:11.512","level":"INFO ","thread":"restartedMain","logger":"org.hibernate.Version","correlationId":"","message":"HHH000412: Hibernate ORM core version 6.5.2.Final"}
+{"timestamp":"2026-08-07 18:02:11.542","level":"INFO ","thread":"restartedMain","logger":"o.h.c.i.RegionFactoryInitiator","correlationId":"","message":"HHH000026: Second-level cache disabled"}
+{"timestamp":"2026-08-07 18:02:11.826","level":"INFO ","thread":"restartedMain","logger":"o.s.o.j.p.SpringPersistenceUnitInfo","correlationId":"","message":"No LoadTimeWeaver setup: ignoring JPA class transformer"}
+{"timestamp":"2026-08-07 18:02:11.871","level":"WARN ","thread":"restartedMain","logger":"org.hibernate.orm.deprecation","correlationId":"","message":"HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)"}
+{"timestamp":"2026-08-07 18:02:11.894","level":"DEBUG","thread":"restartedMain","logger":"o.h.t.d.sql.spi.DdlTypeRegistry","correlationId":"","message":"addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@246260f7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@23d68dd9)"}
+{"timestamp":"2026-08-07 18:02:11.895","level":"DEBUG","thread":"restartedMain","logger":"o.h.t.d.sql.spi.DdlTypeRegistry","correlationId":"","message":"addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5ebf100c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@30ccaddf)"}
+{"timestamp":"2026-08-07 18:02:13.082","level":"INFO ","thread":"restartedMain","logger":"o.h.e.t.j.p.i.JtaPlatformInitiator","correlationId":"","message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)"}
+{"timestamp":"2026-08-07 18:02:13.131","level":"INFO ","thread":"restartedMain","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","correlationId":"","message":"Initialized JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-08-07 18:02:13.599","level":"INFO ","thread":"restartedMain","logger":"o.s.d.j.r.query.QueryEnhancerFactory","correlationId":"","message":"Hibernate is in classpath; If applicable, HQL parser will be used."}
+{"timestamp":"2026-08-07 18:02:14.632","level":"WARN ","thread":"restartedMain","logger":"c.h.s.GoogleDriveStorageProvider","correlationId":"","message":"Google Drive Service Account JSON is empty. Using fallback mode for local development."}
+{"timestamp":"2026-08-07 18:02:14.807","level":"WARN ","thread":"restartedMain","logger":"o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration","correlationId":"","message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"}
+{"timestamp":"2026-08-07 18:02:14.846","level":"WARN ","thread":"restartedMain","logger":"o.s.b.a.s.s.UserDetailsServiceAutoConfiguration","correlationId":"","message":"
+
+Using generated security password: 80a80f40-b121-4c82-b78d-c77acc1a9abe
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+"}
+{"timestamp":"2026-08-07 18:02:14.864","level":"INFO ","thread":"restartedMain","logger":"o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer","correlationId":"","message":"Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager"}
+{"timestamp":"2026-08-07 18:02:15.405","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.e.web.EndpointLinksResolver","correlationId":"","message":"Exposing 4 endpoints beneath base path '/actuator'"}
+{"timestamp":"2026-08-07 18:02:15.520","level":"DEBUG","thread":"restartedMain","logger":"o.s.s.web.DefaultSecurityFilterChain","correlationId":"","message":"Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, CorrelationIdFilter, RateLimitingFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter"}
+{"timestamp":"2026-08-07 18:02:16.151","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.a.OptionalLiveReloadServer","correlationId":"","message":"LiveReload server is running on port 35729"}
+{"timestamp":"2026-08-07 18:02:16.213","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Starting ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-07 18:02:16.234","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat started on port 8080 (http) with context path '/'"}
+{"timestamp":"2026-08-07 18:02:16.248","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Started HimpactApplication in 8.445 seconds (process running for 8.895)"}
+{"timestamp":"2026-08-07 18:03:32.811","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-07 18:03:32.861","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 21.0.11 with PID 29068 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend)"}
+{"timestamp":"2026-08-07 18:03:32.863","level":"DEBUG","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Running with Spring Boot v3.3.2, Spring v6.1.11"}
+{"timestamp":"2026-08-07 18:03:32.864","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"The following 1 profile is active: "dev""}
+{"timestamp":"2026-08-07 18:03:32.939","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-07 18:03:32.939","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-07 18:03:34.599","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-07 18:03:34.730","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 123 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-07 18:03:36.133","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-07 18:03:36.170","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-07 18:03:36.173","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-07 18:03:36.174","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-07 18:03:36.271","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-07 18:03:36.271","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 3331 ms"}
+{"timestamp":"2026-08-07 18:03:36.744","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-07 18:03:36.879","level":"DEBUG","thread":"restartedMain","logger":"c.h.security.JwtAuthenticationFilter","correlationId":"","message":"Filter 'jwtAuthenticationFilter' configured for use"}
+{"timestamp":"2026-08-07 18:03:36.879","level":"DEBUG","thread":"restartedMain","logger":"c.h.security.CorrelationIdFilter","correlationId":"","message":"Filter 'correlationIdFilter' configured for use"}
+{"timestamp":"2026-08-07 18:03:36.885","level":"DEBUG","thread":"restartedMain","logger":"c.h.security.RateLimitingFilter","correlationId":"","message":"Filter 'rateLimitingFilter' configured for use"}
+{"timestamp":"2026-08-07 18:03:37.306","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-07 18:03:37.517","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.pool.HikariPool","correlationId":"","message":"HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@470e3c08"}
+{"timestamp":"2026-08-07 18:03:37.520","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Start completed."}
+{"timestamp":"2026-08-07 18:03:37.606","level":"INFO ","thread":"restartedMain","logger":"org.flywaydb.core.FlywayExecutor","correlationId":"","message":"Database: jdbc:postgresql://localhost:5433/HIMPACT_DB (PostgreSQL 16.14)"}
+{"timestamp":"2026-08-07 18:03:37.753","level":"INFO ","thread":"restartedMain","logger":"o.f.core.internal.command.DbValidate","correlationId":"","message":"Successfully validated 18 migrations (execution time 00:00.115s)"}
+{"timestamp":"2026-08-07 18:03:37.788","level":"INFO ","thread":"restartedMain","logger":"o.f.core.internal.command.DbMigrate","correlationId":"","message":"Current version of schema "public": 18"}
+{"timestamp":"2026-08-07 18:03:37.794","level":"INFO ","thread":"restartedMain","logger":"o.f.core.internal.command.DbMigrate","correlationId":"","message":"Schema "public" is up to date. No migration necessary."}
+{"timestamp":"2026-08-07 18:03:37.990","level":"INFO ","thread":"restartedMain","logger":"o.h.jpa.internal.util.LogHelper","correlationId":"","message":"HHH000204: Processing PersistenceUnitInfo [name: default]"}
+{"timestamp":"2026-08-07 18:03:38.051","level":"INFO ","thread":"restartedMain","logger":"org.hibernate.Version","correlationId":"","message":"HHH000412: Hibernate ORM core version 6.5.2.Final"}
+{"timestamp":"2026-08-07 18:03:38.090","level":"INFO ","thread":"restartedMain","logger":"o.h.c.i.RegionFactoryInitiator","correlationId":"","message":"HHH000026: Second-level cache disabled"}
+{"timestamp":"2026-08-07 18:03:38.378","level":"INFO ","thread":"restartedMain","logger":"o.s.o.j.p.SpringPersistenceUnitInfo","correlationId":"","message":"No LoadTimeWeaver setup: ignoring JPA class transformer"}
+{"timestamp":"2026-08-07 18:03:38.460","level":"WARN ","thread":"restartedMain","logger":"org.hibernate.orm.deprecation","correlationId":"","message":"HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)"}
+{"timestamp":"2026-08-07 18:03:38.492","level":"DEBUG","thread":"restartedMain","logger":"o.h.t.d.sql.spi.DdlTypeRegistry","correlationId":"","message":"addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@21a244e4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@38006d0)"}
+{"timestamp":"2026-08-07 18:03:38.493","level":"DEBUG","thread":"restartedMain","logger":"o.h.t.d.sql.spi.DdlTypeRegistry","correlationId":"","message":"addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@d9d8d2c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5f0dd1c9)"}
+{"timestamp":"2026-08-07 18:03:39.846","level":"INFO ","thread":"restartedMain","logger":"o.h.e.t.j.p.i.JtaPlatformInitiator","correlationId":"","message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)"}
+{"timestamp":"2026-08-07 18:03:39.900","level":"INFO ","thread":"restartedMain","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","correlationId":"","message":"Initialized JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-08-07 18:03:40.597","level":"INFO ","thread":"restartedMain","logger":"o.s.d.j.r.query.QueryEnhancerFactory","correlationId":"","message":"Hibernate is in classpath; If applicable, HQL parser will be used."}
+{"timestamp":"2026-08-07 18:03:41.944","level":"WARN ","thread":"restartedMain","logger":"c.h.s.GoogleDriveStorageProvider","correlationId":"","message":"Google Drive Service Account JSON is empty. Using fallback mode for local development."}
+{"timestamp":"2026-08-07 18:03:42.254","level":"WARN ","thread":"restartedMain","logger":"o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration","correlationId":"","message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"}
+{"timestamp":"2026-08-07 18:03:42.300","level":"WARN ","thread":"restartedMain","logger":"o.s.b.a.s.s.UserDetailsServiceAutoConfiguration","correlationId":"","message":"
+
+Using generated security password: 91210c01-3412-48bb-9ff1-0c0300b8f812
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+"}
+{"timestamp":"2026-08-07 18:03:42.325","level":"INFO ","thread":"restartedMain","logger":"o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer","correlationId":"","message":"Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager"}
+{"timestamp":"2026-08-07 18:03:42.917","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.e.web.EndpointLinksResolver","correlationId":"","message":"Exposing 4 endpoints beneath base path '/actuator'"}
+{"timestamp":"2026-08-07 18:03:43.027","level":"DEBUG","thread":"restartedMain","logger":"o.s.s.web.DefaultSecurityFilterChain","correlationId":"","message":"Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, CorrelationIdFilter, RateLimitingFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter"}
+{"timestamp":"2026-08-07 18:03:43.540","level":"WARN ","thread":"restartedMain","logger":"o.s.b.d.a.OptionalLiveReloadServer","correlationId":"","message":"Unable to start LiveReload server"}
+{"timestamp":"2026-08-07 18:03:43.600","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Starting ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-07 18:03:43.606","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'"}
+{"timestamp":"2026-08-07 18:03:43.613","level":"INFO ","thread":"restartedMain","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","correlationId":"","message":"Closing JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-08-07 18:03:43.618","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Shutdown initiated..."}
+{"timestamp":"2026-08-07 18:03:43.624","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Shutdown completed."}
+{"timestamp":"2026-08-07 18:03:43.647","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-07 18:03:43.669","level":"ERROR","thread":"restartedMain","logger":"o.s.b.d.LoggingFailureAnalysisReporter","correlationId":"","message":"
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+"}
+{"timestamp":"2026-08-07 18:04:00.665","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-07 18:04:00.716","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 21.0.11 with PID 18952 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend)"}
+{"timestamp":"2026-08-07 18:04:00.716","level":"DEBUG","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Running with Spring Boot v3.3.2, Spring v6.1.11"}
+{"timestamp":"2026-08-07 18:04:00.717","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"The following 1 profile is active: "dev""}
+{"timestamp":"2026-08-07 18:04:00.778","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-07 18:04:00.778","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-07 18:04:02.272","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-07 18:04:02.397","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 117 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-07 18:04:03.826","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-07 18:04:03.842","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-07 18:04:03.844","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-07 18:04:03.844","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-07 18:04:03.914","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-07 18:04:03.915","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 3136 ms"}
+{"timestamp":"2026-08-07 18:04:04.378","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-07 18:04:04.476","level":"DEBUG","thread":"restartedMain","logger":"c.h.security.JwtAuthenticationFilter","correlationId":"","message":"Filter 'jwtAuthenticationFilter' configured for use"}
+{"timestamp":"2026-08-07 18:04:04.476","level":"DEBUG","thread":"restartedMain","logger":"c.h.security.CorrelationIdFilter","correlationId":"","message":"Filter 'correlationIdFilter' configured for use"}
+{"timestamp":"2026-08-07 18:04:04.480","level":"DEBUG","thread":"restartedMain","logger":"c.h.security.RateLimitingFilter","correlationId":"","message":"Filter 'rateLimitingFilter' configured for use"}
+{"timestamp":"2026-08-07 18:04:04.917","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-07 18:04:05.094","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.pool.HikariPool","correlationId":"","message":"HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4086f054"}
+{"timestamp":"2026-08-07 18:04:05.095","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Start completed."}
+{"timestamp":"2026-08-07 18:04:05.132","level":"INFO ","thread":"restartedMain","logger":"org.flywaydb.core.FlywayExecutor","correlationId":"","message":"Database: jdbc:postgresql://localhost:5433/HIMPACT_DB (PostgreSQL 16.14)"}
+{"timestamp":"2026-08-07 18:04:05.210","level":"INFO ","thread":"restartedMain","logger":"o.f.core.internal.command.DbValidate","correlationId":"","message":"Successfully validated 18 migrations (execution time 00:00.051s)"}
+{"timestamp":"2026-08-07 18:04:05.248","level":"INFO ","thread":"restartedMain","logger":"o.f.core.internal.command.DbMigrate","correlationId":"","message":"Current version of schema "public": 18"}
+{"timestamp":"2026-08-07 18:04:05.252","level":"INFO ","thread":"restartedMain","logger":"o.f.core.internal.command.DbMigrate","correlationId":"","message":"Schema "public" is up to date. No migration necessary."}
+{"timestamp":"2026-08-07 18:04:05.408","level":"INFO ","thread":"restartedMain","logger":"o.h.jpa.internal.util.LogHelper","correlationId":"","message":"HHH000204: Processing PersistenceUnitInfo [name: default]"}
+{"timestamp":"2026-08-07 18:04:05.463","level":"INFO ","thread":"restartedMain","logger":"org.hibernate.Version","correlationId":"","message":"HHH000412: Hibernate ORM core version 6.5.2.Final"}
+{"timestamp":"2026-08-07 18:04:05.500","level":"INFO ","thread":"restartedMain","logger":"o.h.c.i.RegionFactoryInitiator","correlationId":"","message":"HHH000026: Second-level cache disabled"}
+{"timestamp":"2026-08-07 18:04:05.780","level":"INFO ","thread":"restartedMain","logger":"o.s.o.j.p.SpringPersistenceUnitInfo","correlationId":"","message":"No LoadTimeWeaver setup: ignoring JPA class transformer"}
+{"timestamp":"2026-08-07 18:04:05.828","level":"WARN ","thread":"restartedMain","logger":"org.hibernate.orm.deprecation","correlationId":"","message":"HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)"}
+{"timestamp":"2026-08-07 18:04:05.851","level":"DEBUG","thread":"restartedMain","logger":"o.h.t.d.sql.spi.DdlTypeRegistry","correlationId":"","message":"addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@63aa361e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@1a56f26d)"}
+{"timestamp":"2026-08-07 18:04:05.852","level":"DEBUG","thread":"restartedMain","logger":"o.h.t.d.sql.spi.DdlTypeRegistry","correlationId":"","message":"addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@31cecedb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@a4ca208)"}
+{"timestamp":"2026-08-07 18:04:07.146","level":"INFO ","thread":"restartedMain","logger":"o.h.e.t.j.p.i.JtaPlatformInitiator","correlationId":"","message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)"}
+{"timestamp":"2026-08-07 18:04:07.211","level":"INFO ","thread":"restartedMain","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","correlationId":"","message":"Initialized JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-08-07 18:04:07.946","level":"INFO ","thread":"restartedMain","logger":"o.s.d.j.r.query.QueryEnhancerFactory","correlationId":"","message":"Hibernate is in classpath; If applicable, HQL parser will be used."}
+{"timestamp":"2026-08-07 18:04:09.284","level":"WARN ","thread":"restartedMain","logger":"c.h.s.GoogleDriveStorageProvider","correlationId":"","message":"Google Drive Service Account JSON is empty. Using fallback mode for local development."}
+{"timestamp":"2026-08-07 18:04:09.658","level":"WARN ","thread":"restartedMain","logger":"o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration","correlationId":"","message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"}
+{"timestamp":"2026-08-07 18:04:09.749","level":"WARN ","thread":"restartedMain","logger":"o.s.b.a.s.s.UserDetailsServiceAutoConfiguration","correlationId":"","message":"
+
+Using generated security password: d6bd121e-5049-4133-9035-c465db2b7962
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+"}
+{"timestamp":"2026-08-07 18:04:09.798","level":"INFO ","thread":"restartedMain","logger":"o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer","correlationId":"","message":"Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager"}
+{"timestamp":"2026-08-07 18:04:10.528","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.e.web.EndpointLinksResolver","correlationId":"","message":"Exposing 4 endpoints beneath base path '/actuator'"}
+{"timestamp":"2026-08-07 18:04:10.668","level":"DEBUG","thread":"restartedMain","logger":"o.s.s.web.DefaultSecurityFilterChain","correlationId":"","message":"Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, CorrelationIdFilter, RateLimitingFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter"}
+{"timestamp":"2026-08-07 18:04:11.235","level":"WARN ","thread":"restartedMain","logger":"o.s.b.d.a.OptionalLiveReloadServer","correlationId":"","message":"Unable to start LiveReload server"}
+{"timestamp":"2026-08-07 18:04:11.298","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Starting ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-07 18:04:11.303","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'"}
+{"timestamp":"2026-08-07 18:04:11.311","level":"INFO ","thread":"restartedMain","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","correlationId":"","message":"Closing JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-08-07 18:04:11.315","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Shutdown initiated..."}
+{"timestamp":"2026-08-07 18:04:11.324","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Shutdown completed."}
+{"timestamp":"2026-08-07 18:04:11.345","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-07 18:04:11.366","level":"ERROR","thread":"restartedMain","logger":"o.s.b.d.LoggingFailureAnalysisReporter","correlationId":"","message":"
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+"}

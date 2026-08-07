@@ -6,13 +6,13 @@ services:
     container_name: himpact-prod-postgres
     restart: always
     environment:
-      POSTGRES_DB: himpact_prod
-      POSTGRES_USER: ${POSTGRES_USER:-himpact}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-himpact_secure_password_2026}
+      POSTGRES_DB: ${POSTGRES_DB:-HIMPACT_DB}
+      POSTGRES_USER: ${POSTGRES_USER:-himpact_prod}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-hamdy}
     volumes:
       - postgres_prod_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U himpact -d himpact_prod"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-himpact_prod} -d ${POSTGRES_DB:-HIMPACT_DB}"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -28,9 +28,9 @@ services:
         condition: service_healthy
     environment:
       SPRING_PROFILES_ACTIVE: prod
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/himpact_prod
-      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER:-himpact}
-      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:-himpact_secure_password_2026}
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/${POSTGRES_DB:-HIMPACT_DB}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER:-himpact_prod}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:-hamdy}
       JWT_SECRET: ${JWT_SECRET:-change-this-to-a-strong-256-bit-secret-in-production}
       CORS_ALLOWED_ORIGINS: ${CORS_ALLOWED_ORIGINS:-https://himpact.app}
     volumes:

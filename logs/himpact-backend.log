@@ -1,0 +1,1413 @@
+{"timestamp":"2026-08-02 16:11:26.993","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-02 16:11:27.048","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 21.0.11 with PID 32256 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation)"}
+{"timestamp":"2026-08-02 16:11:27.050","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-08-02 16:11:27.113","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-02 16:11:27.114","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-02 16:11:28.879","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-02 16:11:29.027","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 138 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-02 16:11:30.509","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-02 16:11:30.527","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-02 16:11:30.530","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-02 16:11:30.530","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-02 16:11:30.660","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-02 16:11:30.660","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 3546 ms"}
+{"timestamp":"2026-08-02 16:11:31.132","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-02 16:11:31.569","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:11:32.777","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:11:33.835","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:11:35.004","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:11:36.063","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:11:37.107","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:11:38.164","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:11:39.220","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:11:40.275","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:11:41.333","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:11:42.492","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:11:43.553","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:11:44.602","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:11:45.652","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:11:46.708","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:11:47.765","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:11:48.858","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact"
+---------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact"
+"}
+{"timestamp":"2026-08-02 16:11:48.865","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-08-02 16:11:48.897","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-02 16:11:48.934","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","correlationId":"","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact"
+---------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact"
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.himpact.HimpactApplication.main(HimpactApplication.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact"
+---------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact"
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 13 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact"
+---------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact"
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "himpact"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:698)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:207)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 26 common frames omitted
+{"timestamp":"2026-08-02 16:11:59.222","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-02 16:11:59.275","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 21.0.11 with PID 24904 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation)"}
+{"timestamp":"2026-08-02 16:11:59.276","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-08-02 16:11:59.343","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-02 16:11:59.344","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-02 16:12:01.071","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-02 16:12:01.206","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 127 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-02 16:12:02.535","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-02 16:12:02.560","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-02 16:12:02.563","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-02 16:12:02.563","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-02 16:12:02.662","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-02 16:12:02.663","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 3319 ms"}
+{"timestamp":"2026-08-02 16:12:03.151","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-02 16:12:03.618","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:12:04.773","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:12:05.820","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:12:06.870","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:12:07.908","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:12:08.974","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:12:10.030","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:12:11.080","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:12:12.139","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:12:13.189","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:12:14.239","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:12:15.294","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:12:16.350","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:12:17.404","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:12:18.465","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:12:19.523","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:12:20.583","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact"
+---------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact"
+"}
+{"timestamp":"2026-08-02 16:12:20.587","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-08-02 16:12:20.614","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-02 16:12:20.657","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","correlationId":"","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact"
+---------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact"
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.himpact.HimpactApplication.main(HimpactApplication.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact"
+---------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact"
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 13 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact"
+---------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact"
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "himpact"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:698)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:207)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 26 common frames omitted
+{"timestamp":"2026-08-02 16:30:43.970","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-02 16:30:44.016","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 21.0.11 with PID 23832 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation)"}
+{"timestamp":"2026-08-02 16:30:44.017","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-08-02 16:30:44.071","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-02 16:30:44.072","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-02 16:30:45.626","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-02 16:30:45.755","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 120 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-02 16:30:47.149","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-02 16:30:47.167","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-02 16:30:47.170","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-02 16:30:47.171","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-02 16:30:47.254","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-02 16:30:47.255","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 3183 ms"}
+{"timestamp":"2026-08-02 16:30:47.738","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-02 16:30:48.343","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:30:49.517","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:30:50.571","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:30:51.624","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:30:52.788","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:30:53.954","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:30:55.007","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:30:56.051","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:30:57.096","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:30:58.147","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:30:59.185","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:00.237","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:01.291","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:02.345","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:03.394","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:04.451","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:05.502","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact"
+---------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact"
+"}
+{"timestamp":"2026-08-02 16:31:05.512","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-08-02 16:31:05.531","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-02 16:31:05.558","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","correlationId":"","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact"
+---------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact"
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.himpact.HimpactApplication.main(HimpactApplication.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact"
+---------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact"
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 13 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact"
+---------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact"
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "himpact"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:698)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:207)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 26 common frames omitted
+{"timestamp":"2026-08-02 16:31:34.451","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-02 16:31:34.493","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 21.0.11 with PID 18200 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation)"}
+{"timestamp":"2026-08-02 16:31:34.494","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-08-02 16:31:34.549","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-02 16:31:34.549","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-02 16:31:36.085","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-02 16:31:36.206","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 112 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-02 16:31:37.630","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-02 16:31:37.642","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-02 16:31:37.646","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-02 16:31:37.646","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-02 16:31:37.727","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-02 16:31:37.728","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 3179 ms"}
+{"timestamp":"2026-08-02 16:31:38.176","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-02 16:31:38.732","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:39.898","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:40.976","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:42.129","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:43.170","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:44.217","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:45.275","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:46.321","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:47.378","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:48.537","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:49.695","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:50.752","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:51.791","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:52.845","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:53.904","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:54.959","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:31:56.010","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact"
+---------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact"
+"}
+{"timestamp":"2026-08-02 16:31:56.014","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-08-02 16:31:56.035","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-02 16:31:56.065","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","correlationId":"","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact"
+---------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact"
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.himpact.HimpactApplication.main(HimpactApplication.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact"
+---------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact"
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 13 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact"
+---------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact"
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "himpact"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:698)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:207)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 26 common frames omitted
+{"timestamp":"2026-08-02 16:32:32.900","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-02 16:32:32.949","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 21.0.11 with PID 23380 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation)"}
+{"timestamp":"2026-08-02 16:32:32.950","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-08-02 16:32:33.004","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-02 16:32:33.004","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-02 16:32:34.561","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-02 16:32:34.708","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 138 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-02 16:32:36.149","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-02 16:32:36.179","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-02 16:32:36.182","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-02 16:32:36.183","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-02 16:32:36.276","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-02 16:32:36.277","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 3271 ms"}
+{"timestamp":"2026-08-02 16:32:36.725","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-02 16:32:37.200","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:32:38.508","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:32:39.563","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:32:40.617","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:32:41.675","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:32:42.720","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:32:43.767","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:32:44.825","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:32:45.884","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:32:46.940","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:32:47.990","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:32:49.045","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:32:50.100","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:32:51.139","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:32:52.201","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:32:53.359","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 16:32:54.406","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: database "himpact" does not exist
+-----------------------------------------------------------------------------------
+SQL State  : 3D000
+Error Code : 0
+Message    : FATAL: database "himpact" does not exist
+"}
+{"timestamp":"2026-08-02 16:32:54.411","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-08-02 16:32:54.431","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-02 16:32:54.458","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","correlationId":"","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: database "himpact" does not exist
+-----------------------------------------------------------------------------------
+SQL State  : 3D000
+Error Code : 0
+Message    : FATAL: database "himpact" does not exist
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.himpact.HimpactApplication.main(HimpactApplication.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: database "himpact" does not exist
+-----------------------------------------------------------------------------------
+SQL State  : 3D000
+Error Code : 0
+Message    : FATAL: database "himpact" does not exist
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 13 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: FATAL: database "himpact" does not exist
+-----------------------------------------------------------------------------------
+SQL State  : 3D000
+Error Code : 0
+Message    : FATAL: database "himpact" does not exist
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: database "himpact" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2837)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:175)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:317)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 26 common frames omitted
+{"timestamp":"2026-08-02 17:19:16.511","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-02 17:19:16.555","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 21.0.11 with PID 2284 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation)"}
+{"timestamp":"2026-08-02 17:19:16.556","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-08-02 17:19:16.610","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-02 17:19:16.611","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-02 17:19:18.095","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-02 17:19:18.209","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 106 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-02 17:19:19.595","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-02 17:19:19.610","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-02 17:19:19.614","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-02 17:19:19.615","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-02 17:19:19.701","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-02 17:19:19.702","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 3090 ms"}
+{"timestamp":"2026-08-02 17:19:20.164","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-02 17:19:20.780","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:19:29.091","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:19:30.101","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:19:31.110","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:19:32.123","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:19:33.135","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:19:34.143","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:19:35.158","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:19:36.167","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:19:37.176","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:19:38.185","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:19:41.918","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:19:42.927","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:19:43.929","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:19:44.941","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:19:45.956","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:19:46.965","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+"}
+{"timestamp":"2026-08-02 17:19:46.969","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-08-02 17:19:46.990","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-02 17:19:47.011","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","correlationId":"","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.himpact.HimpactApplication.main(HimpactApplication.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 13 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:358)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 26 common frames omitted
+Caused by: java.net.UnknownHostException: postgres
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	... 38 common frames omitted
+{"timestamp":"2026-08-02 17:23:40.252","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-02 17:23:40.292","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 21.0.11 with PID 25876 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation)"}
+{"timestamp":"2026-08-02 17:23:40.293","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-08-02 17:23:40.348","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-02 17:23:40.349","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-02 17:23:41.904","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-02 17:23:42.015","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 103 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-02 17:23:43.390","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-02 17:23:43.423","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-02 17:23:43.426","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-02 17:23:43.427","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-02 17:23:43.506","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-02 17:23:43.507","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 3158 ms"}
+{"timestamp":"2026-08-02 17:23:43.966","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-02 17:23:44.440","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:23:52.781","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:23:53.794","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:23:54.804","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:23:55.820","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:23:56.834","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:23:57.845","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:23:58.856","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:23:59.867","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:24:00.871","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:24:01.876","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:24:05.591","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:24:06.602","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:24:07.613","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:24:08.621","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:24:09.630","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:24:10.643","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+"}
+{"timestamp":"2026-08-02 17:24:10.648","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-08-02 17:24:10.669","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-02 17:24:10.692","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","correlationId":"","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.himpact.HimpactApplication.main(HimpactApplication.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 13 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:358)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 26 common frames omitted
+Caused by: java.net.UnknownHostException: postgres
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	... 38 common frames omitted
+{"timestamp":"2026-08-02 17:38:18.889","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-02 17:38:18.936","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 21.0.11 with PID 33488 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation)"}
+{"timestamp":"2026-08-02 17:38:18.938","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-08-02 17:38:18.994","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-02 17:38:18.995","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-02 17:38:20.522","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-02 17:38:20.658","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 125 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-02 17:38:22.791","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-02 17:38:22.826","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-02 17:38:22.831","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-02 17:38:22.833","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-02 17:38:22.962","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-02 17:38:22.963","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 3968 ms"}
+{"timestamp":"2026-08-02 17:38:23.612","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-02 17:38:24.183","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:38:25.347","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:38:26.398","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:38:27.465","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:38:28.518","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:38:29.573","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:38:30.733","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:38:31.784","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:38:32.841","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:38:33.906","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:38:35.077","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:38:36.137","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:38:37.194","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:38:38.251","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:38:39.309","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:38:40.354","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:38:41.408","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_dev"
+-------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_dev"
+"}
+{"timestamp":"2026-08-02 17:38:41.412","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-08-02 17:38:41.436","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-02 17:38:41.462","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","correlationId":"","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_dev"
+-------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_dev"
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.himpact.HimpactApplication.main(HimpactApplication.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_dev"
+-------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_dev"
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 13 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_dev"
+-------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_dev"
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "himpact_dev"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:698)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:207)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 26 common frames omitted
+{"timestamp":"2026-08-02 17:43:40.768","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-02 17:43:40.810","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 21.0.11 with PID 10604 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation)"}
+{"timestamp":"2026-08-02 17:43:40.811","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-08-02 17:43:40.876","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-02 17:43:40.876","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-02 17:43:42.546","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-02 17:43:42.700","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 142 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-02 17:43:44.419","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-02 17:43:44.450","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-02 17:43:44.452","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-02 17:43:44.453","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-02 17:43:44.580","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-02 17:43:44.581","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 3704 ms"}
+{"timestamp":"2026-08-02 17:43:45.129","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-02 17:43:45.767","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:43:46.987","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:43:48.151","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:43:49.202","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:43:50.261","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:43:51.427","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:43:52.484","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:43:53.538","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:43:54.596","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:43:55.652","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:43:56.701","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:43:57.747","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:43:58.804","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:43:59.859","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:44:00.916","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:44:01.960","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:44:03.009","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_prod"
+--------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_prod"
+"}
+{"timestamp":"2026-08-02 17:44:03.012","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-08-02 17:44:03.029","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-02 17:44:03.055","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","correlationId":"","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_prod"
+--------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_prod"
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.himpact.HimpactApplication.main(HimpactApplication.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_prod"
+--------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_prod"
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 13 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_prod"
+--------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_prod"
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "himpact_prod"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:698)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:207)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 26 common frames omitted
+{"timestamp":"2026-08-02 17:46:15.049","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-02 17:46:15.100","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 21.0.11 with PID 9220 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation)"}
+{"timestamp":"2026-08-02 17:46:15.101","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-08-02 17:46:15.169","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-02 17:46:15.170","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-02 17:46:16.765","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-02 17:46:16.888","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 113 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-02 17:46:18.628","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-02 17:46:18.650","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-02 17:46:18.653","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-02 17:46:18.654","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-02 17:46:18.784","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-02 17:46:18.785","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 3615 ms"}
+{"timestamp":"2026-08-02 17:46:19.314","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-02 17:46:19.978","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:46:28.299","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:46:29.308","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:46:30.315","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:46:31.326","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:46:32.338","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:46:33.346","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:46:34.357","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:46:35.363","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:46:36.376","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:46:37.385","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:46:41.089","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:46:42.099","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:46:43.113","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:46:44.124","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:46:45.130","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:46:46.146","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+"}
+{"timestamp":"2026-08-02 17:46:46.151","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-08-02 17:46:46.174","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-02 17:46:46.197","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","correlationId":"","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.himpact.HimpactApplication.main(HimpactApplication.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 13 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:358)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 26 common frames omitted
+Caused by: java.net.UnknownHostException: postgres
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	... 38 common frames omitted
+{"timestamp":"2026-08-02 17:49:17.427","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-02 17:49:17.469","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 21.0.11 with PID 15188 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation)"}
+{"timestamp":"2026-08-02 17:49:17.470","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-08-02 17:49:17.531","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-02 17:49:17.532","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-02 17:49:19.298","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-02 17:49:19.469","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 159 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-02 17:49:21.206","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-02 17:49:21.233","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-02 17:49:21.236","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-02 17:49:21.238","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-02 17:49:21.356","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-02 17:49:21.356","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 3823 ms"}
+{"timestamp":"2026-08-02 17:49:21.956","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-02 17:49:22.551","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:49:23.793","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:49:24.859","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:49:25.913","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:49:26.979","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:49:28.032","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:49:29.086","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:49:30.136","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:49:31.298","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:49:32.352","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:49:33.387","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:49:34.439","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:49:35.490","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:49:36.545","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:49:37.709","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:49:38.769","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:49:39.813","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_prod"
+--------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_prod"
+"}
+{"timestamp":"2026-08-02 17:49:39.817","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-08-02 17:49:39.840","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-02 17:49:39.876","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","correlationId":"","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_prod"
+--------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_prod"
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.himpact.HimpactApplication.main(HimpactApplication.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_prod"
+--------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_prod"
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 13 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_prod"
+--------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_prod"
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "himpact_prod"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:698)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:207)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 26 common frames omitted
+{"timestamp":"2026-08-02 17:52:50.570","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-02 17:52:50.614","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 21.0.11 with PID 18768 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation)"}
+{"timestamp":"2026-08-02 17:52:50.615","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-08-02 17:52:50.672","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-02 17:52:50.673","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-02 17:52:52.325","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-02 17:52:52.447","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 111 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-02 17:52:53.905","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-02 17:52:53.939","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-02 17:52:53.944","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-02 17:52:53.944","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-02 17:52:54.026","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-02 17:52:54.027","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 3354 ms"}
+{"timestamp":"2026-08-02 17:52:54.474","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-02 17:52:55.010","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:52:56.175","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:52:57.232","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:52:58.280","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:52:59.432","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:53:00.490","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:53:01.548","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:53:02.715","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:53:03.759","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:53:04.802","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:53:05.878","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:53:06.947","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:53:07.992","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:53:09.037","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:53:10.082","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:53:11.146","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:53:12.206","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_prod"
+--------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_prod"
+"}
+{"timestamp":"2026-08-02 17:53:12.219","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-08-02 17:53:12.266","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-02 17:53:12.330","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","correlationId":"","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_prod"
+--------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_prod"
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.himpact.HimpactApplication.main(HimpactApplication.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_prod"
+--------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_prod"
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 13 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_prod"
+--------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_prod"
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "himpact_prod"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:698)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:207)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 26 common frames omitted
+{"timestamp":"2026-08-02 17:56:57.734","level":"INFO ","thread":"background-preinit","logger":"o.h.validator.internal.util.Version","correlationId":"","message":"HV000001: Hibernate Validator 8.0.1.Final"}
+{"timestamp":"2026-08-02 17:56:57.777","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"Starting HimpactApplication using Java 21.0.11 with PID 24812 (C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation\backend\target\classes started by Hamdy in C:\Users\Hamdy\OneDrive\Documents\Projects\HImpact-Digital-Event-Automation)"}
+{"timestamp":"2026-08-02 17:56:57.778","level":"INFO ","thread":"restartedMain","logger":"com.himpact.HimpactApplication","correlationId":"","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-08-02 17:56:57.845","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable"}
+{"timestamp":"2026-08-02 17:56:57.846","level":"INFO ","thread":"restartedMain","logger":"o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor","correlationId":"","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'"}
+{"timestamp":"2026-08-02 17:56:59.522","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-08-02 17:56:59.671","level":"INFO ","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","correlationId":"","message":"Finished Spring Data repository scanning in 139 ms. Found 16 JPA repository interfaces."}
+{"timestamp":"2026-08-02 17:57:01.104","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.e.tomcat.TomcatWebServer","correlationId":"","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-08-02 17:57:01.119","level":"INFO ","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","correlationId":"","message":"Initializing ProtocolHandler ["http-nio-8080"]"}
+{"timestamp":"2026-08-02 17:57:01.121","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-08-02 17:57:01.122","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","correlationId":"","message":"Starting Servlet engine: [Apache Tomcat/10.1.26]"}
+{"timestamp":"2026-08-02 17:57:01.204","level":"INFO ","thread":"restartedMain","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","correlationId":"","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-08-02 17:57:01.206","level":"INFO ","thread":"restartedMain","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","correlationId":"","message":"Root WebApplicationContext: initialization completed in 3358 ms"}
+{"timestamp":"2026-08-02 17:57:01.674","level":"WARN ","thread":"restartedMain","logger":"c.himpact.security.JwtTokenProvider","correlationId":"","message":"SECURITY WARNING: Using default fallback JWT secret. Set JWT_SECRET environment variable in production!"}
+{"timestamp":"2026-08-02 17:57:02.249","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:57:03.407","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:57:04.460","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:57:05.521","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:57:06.582","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:57:07.627","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:57:08.668","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:57:09.723","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:57:10.765","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:57:11.823","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:57:12.882","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:57:13.942","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:57:15.110","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:57:16.149","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:57:17.191","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:57:18.233","level":"INFO ","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","correlationId":"","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-08-02 17:57:19.290","level":"WARN ","thread":"restartedMain","logger":"o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext","correlationId":"","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_prod"
+--------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_prod"
+"}
+{"timestamp":"2026-08-02 17:57:19.294","level":"INFO ","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","correlationId":"","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-08-02 17:57:19.316","level":"INFO ","thread":"restartedMain","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","correlationId":"","message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-08-02 17:57:19.347","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","correlationId":"","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_prod"
+--------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_prod"
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.himpact.HimpactApplication.main(HimpactApplication.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_prod"
+--------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_prod"
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 13 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: FATAL: password authentication failed for user "himpact_prod"
+--------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "himpact_prod"
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "himpact_prod"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:698)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:207)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 26 common frames omitted

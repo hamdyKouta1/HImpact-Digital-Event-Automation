@@ -22,11 +22,12 @@
         <java.version>21</java.version>
 
         <!--
-            Lombok 1.18.38 is the minimum version supporting Java 25.
-            Lombok 1.18.34 (resolved by Spring Boot 3.3.2 BOM) uses internal javac APIs that
-            were removed in Java 25, causing ExceptionInInitializerError: TypeTag::UNKNOWN.
-            We pin this version so both the dependency and the annotationProcessorPaths entry
-            in maven-compiler-plugin resolve the same artifact.
+            Lombok 1.18.38 is the minimum version that supports Java 25.
+            Lombok 1.18.34 (resolved by Spring Boot 3.3.2 BOM) uses internal javac APIs
+            (sun.misc.Unsafe::objectFieldOffset, com.sun.tools.javac.code.TypeTag::UNKNOWN)
+            that were removed in Java 25, causing ExceptionInInitializerError at compile time.
+            We explicitly pin this property so both the dependency declaration and the
+            annotationProcessorPaths entry in maven-compiler-plugin use the same version.
         -->
         <lombok.version>1.18.38</lombok.version>
 
@@ -38,15 +39,15 @@
         <zxing.version>3.5.3</zxing.version>
 
         <!--
-            testcontainers.version intentionally omitted.
-            Spring Boot 3.3.2 BOM manages Testcontainers. Overriding it risks version
-            mismatches between testcontainers modules.
+            testcontainers.version is intentionally omitted.
+            Spring Boot 3.3.2 BOM manages Testcontainers. Overriding it manually
+            risks version mismatches between testcontainers modules.
         -->
     </properties>
 
     <dependencies>
 
-        <!-- ====================== Spring Boot Core ====================== -->
+        <!-- ── Spring Boot Core ───────────────────────────────────────────── -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -58,41 +59,41 @@
         </dependency>
 
         <!--
-            spring-boot-starter-actuator declared exactly once.
-            The duplicate declaration in the Monitoring block was removed.
-            Duplicate caused: dependencies.dependency must be unique warning.
+            spring-boot-starter-actuator declared once.
+            Duplicate removed from "Monitoring" block — duplicate caused:
+            [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique
         -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
-        <!-- ====================== Security ====================== -->
+        <!-- ── Security ──────────────────────────────────────────────────── -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
         <!--
-            spring-boot-starter-oauth2-resource-server removed.
-            The project uses a custom JwtAuthenticationFilter with HImpact-issued tokens.
-            The resource-server auto-configuration creates a second JWT decoder that contacts
-            Google OIDC discovery at startup, causing startup failure in offline environments
-            and creating a conflicting security filter chain.
+            spring-boot-starter-oauth2-resource-server REMOVED.
+            The project implements its own JwtAuthenticationFilter with custom HImpact tokens.
+            The resource-server auto-configuration conflicts: it creates a separate JWT decoder
+            that attempts to resolve the issuer-uri (https://accounts.google.com) at startup,
+            causing a startup failure in offline environments and conflicting security filter chain.
         -->
 
-        <!-- ====================== Monitoring and Observability ====================== -->
-        <!--
-            runtime scope: application code never imports Micrometer registry classes.
-            The registry is wired by Spring Boot auto-configuration at runtime only.
-        -->
+        <!-- ── Monitoring & Observability ────────────────────────────────── -->
         <dependency>
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-registry-prometheus</artifactId>
+            <!--
+                runtime scope: application code never imports Micrometer registry classes.
+                The registry is wired by Spring Boot auto-configuration at runtime only.
+            -->
             <scope>runtime</scope>
         </dependency>
 
-        <!-- ====================== Database ====================== -->
+        <!-- ── Database ──────────────────────────────────────────────────── -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -109,17 +110,18 @@
             <artifactId>flyway-core</artifactId>
         </dependency>
 
-        <!--
-            flyway-database-postgresql is a Flyway plugin module loaded via ServiceLoader.
-            Application code never directly imports classes from this artifact, so runtime scope.
-        -->
         <dependency>
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-database-postgresql</artifactId>
+            <!--
+                flyway-database-postgresql must be runtime scope.
+                It is a Flyway plugin module loaded via ServiceLoader — application code
+                never directly imports classes from this artifact.
+            -->
             <scope>runtime</scope>
         </dependency>
 
-        <!-- ====================== JWT ====================== -->
+        <!-- ── JWT ───────────────────────────────────────────────────────── -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-api</artifactId>
@@ -140,7 +142,7 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- ====================== Google APIs ====================== -->
+        <!-- ── Google APIs ───────────────────────────────────────────────── -->
         <dependency>
             <groupId>com.google.apis</groupId>
             <artifactId>google-api-services-drive</artifactId>
@@ -148,11 +150,12 @@
         </dependency>
 
         <!--
-            google-oauth-client-jetty removed.
-            This library is for desktop OAuth flows (embedded Jetty redirect server).
-            It is inappropriate for server-side apps and pulls in transitive Jetty dependencies
-            that conflict with the embedded Tomcat. The project uses Service Account auth via
-            google-auth-library-oauth2-http which does not need a local redirect server.
+            google-oauth-client-jetty REMOVED.
+            This library provides a local redirect server for desktop OAuth flows.
+            It is inappropriate for server-side applications and pulls in transitive
+            Jetty dependencies that conflict with the embedded Tomcat.
+            The project uses Service Account authentication via google-auth-library-oauth2-http
+            which does not require a local redirect server.
         -->
 
         <dependency>
@@ -161,17 +164,17 @@
             <version>${google.auth.version}</version>
         </dependency>
 
-        <!-- ====================== Mapping ====================== -->
+        <!-- ── Mapping ───────────────────────────────────────────────────── -->
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
             <version>${mapstruct.version}</version>
         </dependency>
 
-        <!-- ====================== Utilities ====================== -->
+        <!-- ── Utilities ─────────────────────────────────────────────────── -->
         <!--
-            Lombok pinned to 1.18.38. The Spring Boot 3.3.2 BOM resolves 1.18.34.
-            Lombok 1.18.34 crashes on Java 25 with TypeTag::UNKNOWN.
+            Lombok pinned to 1.18.38. The Spring Boot 3.3.2 BOM resolves 1.18.34,
+            which is incompatible with Java 25 (causes TypeTag::UNKNOWN crash).
             optional=true ensures Lombok is excluded from the packaged JAR.
         -->
         <dependency>
@@ -181,14 +184,14 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- ====================== API Documentation ====================== -->
+        <!-- ── API Documentation ─────────────────────────────────────────── -->
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
             <version>${springdoc.version}</version>
         </dependency>
 
-        <!-- ====================== ZXing QR Code ====================== -->
+        <!-- ── ZXing QR Code ─────────────────────────────────────────────── -->
         <dependency>
             <groupId>com.google.zxing</groupId>
             <artifactId>core</artifactId>
@@ -200,15 +203,16 @@
             <version>${zxing.version}</version>
         </dependency>
 
-        <!-- ====================== Email ====================== -->
+        <!-- ── Email ─────────────────────────────────────────────────────── -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
 
-        <!-- Scheduling: included in spring-boot-starter, no extra dependency needed. -->
+        <!-- ── Scheduling ────────────────────────────────────────────────── -->
+        <!-- Included in spring-boot-starter — no extra dependency needed -->
 
-        <!-- ====================== Testing ====================== -->
+        <!-- ── Testing ───────────────────────────────────────────────────── -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -223,7 +227,8 @@
 
         <!--
             Testcontainers versions managed by Spring Boot BOM.
-            No explicit version override needed.
+            Explicit testcontainers.version property removed — overriding the BOM
+            version risks subtle incompatibilities between Testcontainers modules.
         -->
         <dependency>
             <groupId>org.testcontainers</groupId>
@@ -237,7 +242,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- ====================== Dev Tools ====================== -->
+        <!-- ── Dev Tools ─────────────────────────────────────────────────── -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -267,18 +272,19 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <!--
-                        release replaces the deprecated source/target pair.
-                        The release flag enforces the source language level, the
-                        target bytecode version, and the bootstrap API classpath,
-                        preventing accidental use of APIs not present in Java 21.
+                        <release> replaces the deprecated <source>/<target> pair.
+                        release enforces both the source language level AND the
+                        target bytecode version AND the bootstrap API classpath,
+                        ensuring no Java 22+ APIs are accidentally used.
                     -->
                     <release>21</release>
                     <annotationProcessorPaths>
                         <!--
-                            Annotation processor ORDER IS CRITICAL.
-                            Lombok must run before MapStruct so MapStruct can see
-                            Lombok-generated methods (builders, getters, setters).
-                            lombok-mapstruct-binding enforces this ordering constraint.
+                            ORDER IS CRITICAL:
+                            1. Lombok must run FIRST — it generates builder/getter/setter methods.
+                            2. lombok-mapstruct-binding enforces the correct processor order.
+                            3. mapstruct-processor must run AFTER Lombok so it can see
+                               Lombok-generated methods (e.g., builder setters on entities).
                         -->
                         <path>
                             <groupId>org.projectlombok</groupId>

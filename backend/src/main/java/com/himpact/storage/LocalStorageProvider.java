@@ -15,6 +15,7 @@ import java.util.UUID;
  * Used for local development and integration testing.
  */
 @Slf4j
+@org.springframework.context.annotation.Primary
 @Component("localStorageProvider")
 public class LocalStorageProvider implements StorageProvider {
 

@@ -27,9 +27,9 @@ public class TestcontainersConfiguration {
      */
     private static final PostgreSQLContainer<?> POSTGRES_CONTAINER =
             new PostgreSQLContainer<>(DockerImageName.parse("postgres:16-alpine"))
-                    .withDatabaseName("himpact_test")
-                    .withUsername("test")
-                    .withPassword("test");
+                    .withDatabaseName("HIMPACT_DB")
+                    .withUsername("himpact_test")
+                    .withPassword("hamdy");
 
     static {
         POSTGRES_CONTAINER.start();

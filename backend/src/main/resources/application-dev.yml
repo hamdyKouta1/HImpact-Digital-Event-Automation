@@ -4,9 +4,9 @@ spring:
       on-profile: dev
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/himpact
-    username: himpact
-    password: changeme
+    url: jdbc:postgresql://localhost:5433/HIMPACT_DB
+    username: himpact_dev
+    password: hamdy
 
   jpa:
     show-sql: true
