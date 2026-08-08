@@ -1,6 +1,22 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useAuth } from '@/contexts/AuthContext'
+
+// Augment the Window interface to include the GSI global
+declare global {
+  interface Window {
+    google?: {
+      accounts: {
+        id: {
+          initialize: (config: object) => void
+          prompt: (notification?: (n: { isNotDisplayed: () => boolean; isSkippedMoment: () => boolean }) => void) => void
+          renderButton: (parent: HTMLElement, options: object) => void
+          disableAutoSelect: () => void
+        }
+      }
+    }
+  }
+}
 
 /**
  * Google Sign-In page.
@@ -13,11 +29,12 @@ import { useAuth } from '@/contexts/AuthContext'
  * See: project-index/07_API_Specification.md — POST /auth/google
  */
 export function SignInPage() {
-  const { isAuthenticated } = useAuth()
+  const { isAuthenticated, login } = useAuth()
   const navigate = useNavigate()
   const location = useLocation()
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const googleBtnRef = useRef<HTMLDivElement>(null)
 
   // Redirect if already authenticated
   const from = (location.state as { from?: Location })?.from?.pathname || '/guest'
@@ -28,25 +45,79 @@ export function SignInPage() {
     }
   }, [isAuthenticated, navigate, from])
 
-  const handleGoogleLogin = useCallback(async () => {
-    // In the real implementation, this will use the Google GSI SDK:
-    //   google.accounts.id.initialize({ client_id, callback: handleCredentialResponse })
-    //   google.accounts.id.prompt()
-    //
-    // For Sprint 1, this demonstrates the flow. Full GSI integration in Sprint 2.
-    setIsLoading(true)
-    setError(null)
-
-    try {
-      // Placeholder: the actual idToken will come from Google GSI callback
-      // await login(idToken)
-      // navigate(from, { replace: true })
-      console.log('Google Sign-In — GSI integration pending Sprint 2')
-    } catch (_err) {
-      setError('Sign-in failed. Please try again.')
-    } finally {
-      setIsLoading(false)
+  // Initialise Google Identity Services once the SDK loads
+  useEffect(() => {
+    const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID
+    if (!clientId) {
+      console.warn('VITE_GOOGLE_CLIENT_ID is not set — Google Sign-In will not work.')
+      return
     }
+
+    const tryInit = () => {
+      if (!window.google?.accounts?.id) return
+
+      window.google.accounts.id.initialize({
+        client_id: clientId,
+        callback: async (response: { credential: string }) => {
+          setIsLoading(true)
+          setError(null)
+          try {
+            await login(response.credential)
+            // Navigation handled by the isAuthenticated effect above
+          } catch (_err) {
+            setError('Sign-in failed. Please try again.')
+            setIsLoading(false)
+          }
+        },
+        auto_select: false,
+        cancel_on_tap_outside: true,
+      })
+
+      // Render the branded Google button inside our custom button container
+      if (googleBtnRef.current) {
+        window.google.accounts.id.renderButton(googleBtnRef.current, {
+          type: 'standard',
+          theme: 'outline',
+          size: 'large',
+          text: 'continue_with',
+          shape: 'rectangular',
+          width: 360,
+        })
+      }
+    }
+
+    // GSI script may already be loaded or still loading
+    if (window.google?.accounts?.id) {
+      tryInit()
+    } else {
+      // Poll briefly until the script tag loaded by index.html is ready
+      const interval = setInterval(() => {
+        if (window.google?.accounts?.id) {
+          clearInterval(interval)
+          tryInit()
+        }
+      }, 100)
+      return () => clearInterval(interval)
+    }
+  }, [login])
+
+  const handleGoogleLogin = useCallback(() => {
+    const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID
+    if (!clientId) {
+      setError('Google Sign-In is not configured. Set VITE_GOOGLE_CLIENT_ID in your .env file.')
+      return
+    }
+    if (!window.google?.accounts?.id) {
+      setError('Google Sign-In SDK failed to load. Check your internet connection.')
+      return
+    }
+    // Trigger the One Tap / popup prompt
+    window.google.accounts.id.prompt((notification) => {
+      if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
+        // One Tap was suppressed — the rendered button below still works
+        setError(null)
+      }
+    })
   }, [])
 
   if (isAuthenticated) {
@@ -94,6 +165,12 @@ export function SignInPage() {
             </div>
           )}
 
+          {/* Google-rendered branded button (authoritative) */}
+          <div className="flex justify-center mb-4">
+            <div ref={googleBtnRef} id="google-gsi-btn" />
+          </div>
+
+          {/* Fallback custom button — triggers One Tap prompt */}
           <button
             id="google-sign-in-btn"
             type="button"
@@ -147,3 +224,4 @@ export function SignInPage() {
     </div>
   )
 }
+

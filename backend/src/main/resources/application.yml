@@ -66,6 +66,11 @@ management:
       show-details: always
       probes:
         enabled: true
+      # Exclude mail from health — SMTP creds are not required for local dev.
+      # Without this, empty SMTP_USERNAME/PASSWORD causes status=DOWN → HTTP 503.
+      group:
+        readiness:
+          exclude: mail
   prometheus:
     metrics:
       export:
