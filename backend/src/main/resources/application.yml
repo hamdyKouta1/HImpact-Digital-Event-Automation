@@ -96,6 +96,20 @@ himpact:
       application-name: ${GOOGLE_DRIVE_APPLICATION_NAME:HImpact}
       credentials-path: ${GOOGLE_DRIVE_CREDENTIALS_PATH:}
 
+  # ── Google Drive Storage Provider (StorageProvider implementation) ───────────
+  # These properties are read directly by GoogleDriveStorageProvider via @Value.
+  # They are separate from himpact.google.drive.* which is used by the OAuth
+  # client. The provider supports two credential mechanisms:
+  #   1. service-account-json — inline JSON (Docker env var / secret)
+  #   2. credentials-path — path to a JSON key file (local development)
+  # If both are set, service-account-json takes precedence.
+  storage:
+    google:
+      service-account-json: ${GOOGLE_DRIVE_SERVICE_ACCOUNT_JSON:}
+      credentials-path: ${GOOGLE_DRIVE_CREDENTIALS_PATH:}
+      root-folder-id: ${GOOGLE_DRIVE_ROOT_FOLDER_ID:}
+      application-name: ${GOOGLE_DRIVE_APPLICATION_NAME:HImpact}
+
 logging:
   level:
     com.himpact: INFO

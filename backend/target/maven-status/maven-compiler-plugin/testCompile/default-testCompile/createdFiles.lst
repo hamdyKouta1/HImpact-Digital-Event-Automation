@@ -3,6 +3,7 @@ com\himpact\service\InvitationServiceTest.class
 com\himpact\service\MediaServiceTest.class
 com\himpact\security\JwtTokenProviderTest.class
 com\himpact\service\EventServiceTest.class
+com\himpact\storage\GoogleDriveStorageProviderTest.class
 com\himpact\service\PaymentServiceTest.class
 com\himpact\service\RsvpServiceTest.class
 com\himpact\TestcontainersConfiguration.class

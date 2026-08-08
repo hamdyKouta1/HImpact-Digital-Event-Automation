@@ -1,0 +1,67 @@
+# ─── HImpact .gitignore ────────────────────────────────────────────────────────
+
+# ── Secrets & Credentials ──────────────────────────────────────────────────────
+# NEVER commit service-account keys, credentials, or any sensitive JSON.
+.env
+.env.*
+!.env.example
+
+# Credential directories (keep outside project, point via env var)
+credentials/
+secrets/
+.secrets/
+
+# Google service-account JSON key files (specific pattern)
+*-service-account.json
+*-credentials.json
+himpact-drive.json
+google-drive-credentials.json
+service-account-key.json
+
+# ── Java / Maven ───────────────────────────────────────────────────────────────
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.tmp
+*.pid
+
+# Maven wrapper binary (checked in but not the compiled artifact)
+!.mvn/wrapper/maven-wrapper.jar
+
+# ── Spring Boot ────────────────────────────────────────────────────────────────
+backend/logs/
+backend/uploads/
+application-local.yml
+application-local.properties
+
+# ── Node / Vite / Frontend ─────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+*.tsbuildinfo
+
+# ── IDE / Editor ───────────────────────────────────────────────────────────────
+.idea/
+*.iml
+.vscode/settings.json
+.DS_Store
+Thumbs.db
+
+# ── Docker ─────────────────────────────────────────────────────────────────────
+# Keep compose files tracked; ignore local override
+docker-compose.override.yml
+docker-compose.local.yml
+
+# ── OS ─────────────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

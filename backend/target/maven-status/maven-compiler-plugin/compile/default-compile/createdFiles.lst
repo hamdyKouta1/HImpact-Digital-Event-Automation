@@ -40,6 +40,7 @@ com\himpact\entity\Comment.class
 com\himpact\repository\ThemeRepository.class
 com\himpact\repository\RsvpRepository.class
 com\himpact\service\InvitationService.class
+com\himpact\storage\GoogleDriveHealthIndicator.class
 com\himpact\entity\FeatureFlag.class
 com\himpact\domain\events\InvitationViewedEvent.class
 com\himpact\entity\Rsvp.class

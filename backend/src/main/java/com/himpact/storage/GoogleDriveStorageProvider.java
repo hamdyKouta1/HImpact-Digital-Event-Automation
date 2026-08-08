@@ -17,6 +17,8 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.Collections;
 import java.util.UUID;
 
@@ -36,39 +38,76 @@ import java.util.UUID;
 public class GoogleDriveStorageProvider implements StorageProvider, DriveProvider {
 
     private final String serviceAccountJson;
+    private final String credentialsPath;
     private final String rootFolderId;
+    private final String applicationName;
     private Drive driveService;
 
     public GoogleDriveStorageProvider(
             @Value("${himpact.storage.google.service-account-json:}") String serviceAccountJson,
-            @Value("${himpact.storage.google.root-folder-id:root}") String rootFolderId) {
+            @Value("${himpact.storage.google.credentials-path:}")     String credentialsPath,
+            @Value("${himpact.storage.google.root-folder-id:}")       String rootFolderId,
+            @Value("${himpact.storage.google.application-name:HImpact}") String applicationName) {
         this.serviceAccountJson = serviceAccountJson;
-        this.rootFolderId = rootFolderId;
+        this.credentialsPath    = credentialsPath;
+        this.rootFolderId       = rootFolderId;
+        this.applicationName    = applicationName;
         initDriveService();
     }
 
     private void initDriveService() {
-        if (serviceAccountJson == null || serviceAccountJson.isBlank()) {
-            log.warn("Google Drive Service Account JSON is empty. Using fallback mode for local development.");
+        // Resolve credential source: inline JSON takes precedence over file path.
+        InputStream credentialsStream = resolveCredentialsStream();
+        if (credentialsStream == null) {
+            log.warn("Google Drive credentials are not configured "
+                    + "(set GOOGLE_DRIVE_SERVICE_ACCOUNT_JSON or GOOGLE_DRIVE_CREDENTIALS_PATH). "
+                    + "Using fallback/stub mode — uploads will not reach Google Drive.");
             return;
         }
 
         try {
-            InputStream credentialsStream = new ByteArrayInputStream(
-                    serviceAccountJson.getBytes(StandardCharsets.UTF_8));
             GoogleCredentials credentials = GoogleCredentials.fromStream(credentialsStream)
                     .createScoped(Collections.singleton(DriveScopes.DRIVE));
 
             this.driveService = new Drive.Builder(
                     GoogleNetHttpTransport.newTrustedTransport(),
                     GsonFactory.getDefaultInstance(),
-                    new HttpCredentialsAdapter(credentials)).setApplicationName("HImpact Digital Event Automation")
+                    new HttpCredentialsAdapter(credentials))
+                    .setApplicationName(applicationName)
                     .build();
 
-            log.info("Successfully initialized Google Drive API v3 Service Account credentials.");
+            log.info("Google Drive initialized — applicationName=[{}], rootFolderId=[{}]",
+                    applicationName, rootFolderId.isBlank() ? "(not set — uploads go to service account root)" : rootFolderId);
         } catch (Exception ex) {
             log.error("Failed to initialize Google Drive Service Account. Falling back to local mode.", ex);
         }
+    }
+
+    /**
+     * Resolve credentials from inline JSON (preferred for Docker/prod) or from a
+     * file path (preferred for local development). Returns null if neither is configured.
+     */
+    private InputStream resolveCredentialsStream() {
+        // 1. Inline JSON — e.g. set via GOOGLE_DRIVE_SERVICE_ACCOUNT_JSON env var
+        if (serviceAccountJson != null && !serviceAccountJson.isBlank()) {
+            log.debug("Google Drive: using inline service-account-json credential.");
+            return new ByteArrayInputStream(serviceAccountJson.getBytes(StandardCharsets.UTF_8));
+        }
+        // 2. File path — e.g. set via GOOGLE_DRIVE_CREDENTIALS_PATH env var (local dev)
+        if (credentialsPath != null && !credentialsPath.isBlank()) {
+            Path path = Path.of(credentialsPath);
+            if (Files.exists(path)) {
+                try {
+                    log.debug("Google Drive: loading service-account credentials from file [{}]", credentialsPath);
+                    return Files.newInputStream(path);
+                } catch (Exception ex) {
+                    log.error("Google Drive: failed to read credentials file [{}]: {}", credentialsPath, ex.getMessage());
+                }
+            } else {
+                log.warn("Google Drive: credentials-path [{}] does not exist.", credentialsPath);
+            }
+        }
+        return null;
     }
 
     @Override
@@ -181,6 +220,16 @@ public class GoogleDriveStorageProvider implements StorageProvider, DriveProvide
         return "GOOGLE_DRIVE";
     }
 
+    /** Used by GoogleDriveHealthIndicator — does NOT expose credentials. */
+    public boolean isDriveInitialized() {
+        return driveService != null;
+    }
+
+    /** Used by GoogleDriveHealthIndicator — safe to log/expose. */
+    public String getRootFolderId() {
+        return rootFolderId;
+    }
+
     // ── DriveProvider Interface Implementation (Sprint 6 Workstream A) ──────
     @Override
     public UploadResult uploadFile(String folderPath, String filename, byte[] content, String mimeType) {
@@ -203,7 +252,9 @@ public class GoogleDriveStorageProvider implements StorageProvider, DriveProvide
     }
 
     public String getOrCreateFolder(String folderPath) throws Exception {
-        String currentParentId = rootFolderId;
+        // If no root folder is configured, fall back to service-account's accessible root.
+        // Note: service accounts have no "My Drive" — always configure a shared folder.
+        String currentParentId = (rootFolderId != null && !rootFolderId.isBlank()) ? rootFolderId : "root";
         String[] parts = folderPath.split("/");
 
         for (String part : parts) {
